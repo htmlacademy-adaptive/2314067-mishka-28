@@ -1,15 +1,116 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Mishka</title>
 </head>
+
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-
+    <a class="main-header__logo" href="#">
+      <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
     </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a>Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list user-list">
+          <li class="user-list__search">
+            <span class="visually-hidden">Поиск</span>
+            <a>Поиск по сайту</a>
+          </li>
+          <li class="user-list__search">
+            <span class="visually-hidden">Корзина</span>
+            <a>Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Магазин ручной работы для дома</h1>
+    <section class="info">
+      <h2 class="info__title">Милые штучки ручной работы для дома</h2>
+      <a class="info__button" href="#">Предметы интерьера</a>
+      <a class="info__button" href="#">Детские игрушки</a>
+    </section>
+    <section class="featured">
+      <h2 class="featured__title">Вязаные корзинки</h2>
+      <h3 class="featured__topweek-titel">Товар недели</h3>
+      <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
+      </p>
+      <dl class="featured__list">
+        <div class="featured__item">
+          <dt class="featured__item-title">Цвет:</dt>
+          <dl class="featured__item-text">тиффани/серый</dl>
+        </div>
+        <div class="featured__item">
+          <dt class="featured__item-title">Диаметр:</dt>
+          <dl class="featured__item-text">25 см</dl>
+        </div>
+        <div class="featured__item">
+          <dt class="featured__item-title">Высота:</dt>
+          <dl class="featured__item-text">15 см</dl>
+        </div>
+      </dl>
+      <img class="featured__image" src="img/goods/triple-set-mobile.jpg" width="260" height="315" alt="Товар недели">
+      <div class="featured__price">
+        <p class="featured__price-title">Цена: 990 руб.</p>
+        <a class="featured__price-button" href="#">Заказать</a>
+      </div>
+    </section>
+    <section class="about-container">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <h3 class="about__title">Коротко о нас:</h3>
+      <ul class="about__list">
+        <li class="about__item">Экологически чистые материалы</li>
+        <li class="about__item">Скандинавский стиль по российской цене</li>
+        <li class="about__item">Увеличивает лайки на фотографиях</li>
+        <li class="about__item">Связано вручную с любовью и умилением</li>
+        <li class="about__item">Поддержка отечественного производителя</li>
+        <li class="about__item">Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+    <section class="feedback">
+      <h2 class="visually-hidden">Наши отзывы</h2>
+      <h3 class="feedback__title">Отзывы</h3>
+      <ul class="feedback__list">
+        <li class="feedback__item">
+          <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="feedback__author">Анастасия Красильникова</p>
+          <span class="feedback__author-contact">@misssssiskras</span>
+        </li>
+        <li class="feedback__item">
+          <p class="feedback__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
+            количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+            и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+            больше лайков!</p>
+          <p class="feedback__author">Екатерина Красильникова</p>
+          <span class="feedback__author-contact">@misssssiskras2</span>
+        </li>
+        <li class="feedback__item">
+          <p class="feedback__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
+            такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+            и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+            больше лайков!</p>
+          <p class="feedback__author">Елена Красильникова</p>
+          <span class="feedback__author-contact">@misssssiskras3</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
 
 </body>
+
 </html>
