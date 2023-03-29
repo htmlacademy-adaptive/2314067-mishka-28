@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Александр Лисунов](https://up.htmlacademy.ru/adaptive/28/user/2314067).
-* Наставник: `Неизвестно`.
+* Наставник: [Карина Карапетян](https://htmlacademy.ru/profile/karinaweb).
 
 ---
 
