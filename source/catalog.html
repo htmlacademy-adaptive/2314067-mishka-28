@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="#">
-      <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Мишка">
+      <img href="index.html" src="img/logo-header.svg" width="86" height="35" alt="Логотип Мишка">
     </a>
     <nav class="navigation">
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -44,9 +44,36 @@
       </div>
     </nav>
   </header>
-  <main class="main-catalog">
+  <main class="catalog">
     <h1 class="visually-hidden">Страница каталога товаров</h1>
-    <h2 class="main-catalog__title">Каталог товаров</h2>
+    <h2 class="catalog__title">Каталог товаров</h2>
+    <!-- Список товаров -->
+    <section class="product-scroll">
+      <ul class="product-scroll__list product">
+        <li class="product__item">
+          <img href="#" src="img/goods/product-one.jpg" width="260" height="195" alt="Изображение зайчик-попрыгайчик">
+          <a class="product__title" href="#">Зайчик-попрыгайчик</a>
+          <p class="product__text">Рост 30 см, вес 200 г</p>
+          <p class="product__text-price">1 200 руб.</p>
+        </li>
+        <li class="product__item">
+          <img href="#" src="img/goods/product-two.jpg" width="260" height="195" alt="Изображение корзинки для белья">
+          <a class="product__title" href="#">Корзинка для белья</a>
+          <p class="product__text">Диаметр 15 см, высота 10 см</p>
+          <p class="product__text-price">690 руб.</p>
+        </li>
+        <li class="product__item">
+          <img href="#" src="img/goods/product-three.jpg" width="260" height="195"
+            alt="Изображение большой корзинки для игрушек">
+          <a class="product__title" href="#">Большая корзинка для игрушек</a>
+          <p class="product__text">Диаметр 30 см, высота 30 см</p>
+          <p class="product__text-price">1 500 руб.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="product-videoplayer">
+
+    </section>
   </main>
 
 </body>
