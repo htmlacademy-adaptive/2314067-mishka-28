@@ -8,7 +8,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="/source/index.html">
+    <a class="page-header__logo" href="index.html">
       <img src="img/logo-header.svg" width="86" height="35" alt="Логотип Мишка">
     </a>
     <nav class="page-header__navigation navigation">
@@ -23,11 +23,11 @@
           </li>
         </ul>
         <ul class="navigation__list user-list">
-          <li class="user-list__search visually-hidden">Поиск
-            <a>Поиск по сайту</a>
+          <li class="user-list__search">
+            <a class="user-list__link" href="#">Поиск по сайту<span class="visually-hidden">Поиск</span></a>
           </li>
-          <li class="user-list__search visually-hidden">Корзина
-            <a>Корзина: пока пуста</a>
+          <li class="user-list__search">
+            <a class="user-list__link" href="#">Корзина: пока пуста<span class="visually-hidden">Корзина</span></a>
           </li>
         </ul>
         <ul class="navigation__list additional-list">
@@ -43,7 +43,9 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title title">Каталог товаров</h1>
+    <div class="page-main__title page-name">
+      <h1 class="page-name__title title">Каталог товаров</h1>
+    </div>
     <!-- Список товаров -->
     <section class="product-scroll">
       <ul class="product-scroll__list product">
@@ -55,7 +57,6 @@
           <p class="product__text">Рост 30 см, вес 200 г</p>
           <p class="product__text-price">1 200 руб.</p>
           <a class="product__logo-price" href="#">
-            <img src="img/goods/basket.svg" width="20" height="19" alt="Корзина">
           </a>
         </li>
         <li class="product__item">
@@ -66,7 +67,6 @@
           <p class="product__text">Диаметр 15 см, высота 10 см</p>
           <p class="product__text-price">690 руб.</p>
           <a class="product__logo-price" href="#">
-            <img src="img/goods/basket.svg" width="20" height="19" alt="Корзина">
           </a>
         </li>
         <li class="product__item">
@@ -78,14 +78,13 @@
           <p class="product__text">Диаметр 30 см, высота 30 см</p>
           <p class="product__text-price">1 500 руб.</p>
           <a class="product__logo-price" href="#">
-            <img src="img/goods/basket.svg" width="20" height="19" alt="Корзина">
           </a>
         </li>
       </ul>
     </section>
     <!-- Блок с видео -->
     <section class="production">
-      <h2 class="production__title title">
+      <h2 class="production__title">
         <span>Процесс производства</span>
       </h2>
       <div class="production__video video">
