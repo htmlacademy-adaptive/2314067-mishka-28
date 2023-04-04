@@ -1,1 +1,10 @@
+// Global
+@import "./global/fonts.scss";
+@import "./global/color.scss";
+@import "./global/page-body.scss";
+@import "./global/typography.scss";
 
+// Blocks
+@import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/info.scss";
