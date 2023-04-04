@@ -121,26 +121,26 @@
           </ul>
         </fieldset>
         <!-- Форма заполнения личных данных -->
-        <div class="form-data">
+        <div class="form__wrapper">
           <fieldset class="form__group">
             <legend class="form__group-title">ФИО</legend>
-            <label class="group__label">Имя:
-              <input class="" type="text" name="name" placeholder="Введите ваше имя*" required>
+            <label class="form__label label" for="name">Имя: // Связать по for
+              <input class="form__input input" type="text" name="name" placeholder="Введите ваше имя*" id="name" required> // Связать по id
             </label>
-            <label class="group__label">Фамилия:
-              <input class="" type="text" name="surname" placeholder="Укажите фамилию*" required>
+            <label class="form__label label" for="surname">Фамилия:
+              <input class="form__input input" type="text" name="surname" placeholder="Укажите фамилию*" id="surname" required>
             </label>
-            <label class="group__label">Отчество:
-              <input class="" type="text" name="middlename" placeholder="Отчество, если желаете">
+            <label class="form__label label" for="middlename">Отчество:
+              <input class="form__input input" type="text" name="middlename" id="middlename" placeholder="Отчество, если желаете">
             </label>
           </fieldset>
           <fieldset class="form__group">
             <legend class="visually-hidden">Обратная связь</legend>
             <label class="form__group-title" for="number">ТЕЛ</label>
-            <input class="" type="text" name="telephone" placeholder="+7 XXX XXX XX XX*" id="number"
+            <input class="form__input input" type="text" name="telephone" placeholder="+7 XXX XXX XX XX*" id="number"
               required>
             <label class="form__group-title" for="email">E-MAIL</label>
-            <input class="" type="text" name="e-mail" placeholder="Ваш Email*" id="email" required>
+            <input class="form__input input" type="text" name="e-mail" placeholder="Ваш Email*" id="email" required>
           </fieldset>
           <label class="form__group-title">ДОП
             <textarea class="group__area" name="additionally"
