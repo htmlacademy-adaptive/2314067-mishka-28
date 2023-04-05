@@ -1,6 +1,38 @@
 .info {
+  position: relative;
   background-image: url("../img/info-images.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top -17px;
   background-color: $color-background-img;
+}
+
+.info__title {
+  font-size: 27px;
+  font-weight: 700;
+  width: 260px;
+  margin: 0 auto;
+  padding: 73px 0 120px 0;
+}
+
+.info__button {
+  display: flex;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-aqua-light;
+  padding: 24px 0 31px 30px;
+}
+
+.info__button--lamp {
+  background-image: url("../img/button-lamp.svg");
+  background-repeat: no-repeat;
+  background-position: top 23px right 36px;
+}
+
+.info__button--cube {
+  background-image: url("../img/button-cube.svg");
+  background-repeat: no-repeat;
+  background-position: top 21px right 27px;
 }

@@ -1,7 +1,21 @@
-.navigation__toggle {
-  background-image: url("../img/menu-open.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 20px;
-  height: 14px;
+.page-header__navigation {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $title-darck;
+}
+
+.navigation__list {
+  list-style-type: none;
+}
+
+.additional-list__item {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $title-darck;
+}
+
+.navigation__text {
+  line-height: 24px;
 }

@@ -4,3 +4,17 @@
   align-items: center;
   justify-content: center;
 }
+
+.page-header__logo {
+  display: inline-block;
+}
+
+.page-header__toggle {
+  background-image: url("../img/menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  right: 30px;
+}

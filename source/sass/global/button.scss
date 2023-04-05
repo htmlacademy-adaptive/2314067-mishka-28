@@ -1,0 +1,20 @@
+.button {
+  box-sizing: border-box;
+  display: inline-flex;
+  font-family: inherit;
+  margin: 0;
+  justify-content: center;
+  text-decoration: none;
+  color: $text-darck;
+  border: 2px solid $text-darck;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: transparent;
+
+  &--primary {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
