@@ -1,0 +1,49 @@
+.feedback {
+  padding-top: 58px;
+  margin: 0;
+}
+
+.feedback__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $title-darck;
+  margin: 0;
+}
+
+.feedback__text {
+  margin: 0;
+}
+
+.feedback__author {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $title-darck;
+  margin: 33px 0 0 0;
+}
+
+.feedback__author-contact {
+  font-size: 17px;
+  margin: 0;
+}
+
+.feedback__button {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 26px;
+  outline: none;
+}
+
+.feedback__button--previous {
+  background-image: url("../img/arrow-left.svg");
+}
+
+.feedback__button--next {
+  background-image: url("../img/arrow-right.svg");
+}
+
+.feedback__add-review {
+  margin: 38px 0 0 0;
+}

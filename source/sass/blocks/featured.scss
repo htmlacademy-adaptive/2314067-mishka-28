@@ -1,3 +1,16 @@
+.featured {
+  padding-top: 31px;
+  margin: 0;
+}
+
+.featured__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $title-darck;
+  margin: 0;
+}
+
 .featured__topweek-titel {
   font-size: 17px;
   font-weight: 700;
@@ -28,7 +41,6 @@
 
 .featured__button {
   margin-top: 25px;
-  width: 100%;
   justify-content: center;
   align-items: center;
 }

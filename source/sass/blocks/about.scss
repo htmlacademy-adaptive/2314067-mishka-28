@@ -1,0 +1,23 @@
+.about {
+  padding-top: 31px;
+}
+
+.about__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $title-darck;
+  margin: 0;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__item {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $title-darck;
+}
