@@ -1,0 +1,25 @@
+.contacts__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: $title-darck;
+  margin: 0;
+}
+
+.contacts__list-title {
+  font-size: 14px;
+}
+
+.contacts__list-text {
+  font-size: 14px;
+  color: $text-darck;
+  margin: 0;
+
+  &--mail {
+    color: $text-darck;
+    text-decoration: underline $color-aqua-line;
+  }
+}
+
+.contacts__map {
+  margin: 62px 0 0 0;
+}
