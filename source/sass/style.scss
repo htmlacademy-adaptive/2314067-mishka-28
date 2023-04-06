@@ -4,7 +4,8 @@
 @import "./global/button.scss";
 
 // Blocks
-@import "./blocks/page.scss";
+@import "./blocks/page-body.scss";
+@import "./blocks/page-main.scss";
 @import "./blocks/header.scss";
 @import "./blocks/navigation.scss";
 @import "./blocks/info.scss";
@@ -12,4 +13,6 @@
 @import "./blocks/about.scss";
 @import "./blocks/feedback.scss";
 @import "./blocks/contacts.scss";
+@import "./blocks/product-scroll.scss";
+@import "./blocks/production.scss";
 @import "./blocks/footer.scss";

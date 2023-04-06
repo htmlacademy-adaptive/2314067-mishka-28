@@ -1,0 +1,37 @@
+.product-scroll {
+  padding-top: 30px;
+}
+
+.product__item {
+  border: 1px solid $color-background-product;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.product__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $title-darck;
+  text-decoration: none;
+}
+
+.product__text {
+  font-size: 13px;
+  margin: 0;
+}
+
+.product__text-price {
+  font-weight: 700;
+  line-height: 24px;
+  color: $title-darck;
+  margin: 0;
+}
+
+.product__basket {
+  background-image: url("../img/goods/basket.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 19px;
+}
