@@ -1,7 +1,7 @@
 .contacts__title {
   font-size: 25px;
   font-weight: 700;
-  color: $title-darck;
+  color: $title-dark;
   margin: 0;
 }
 
@@ -11,11 +11,17 @@
 
 .contacts__list-text {
   font-size: 14px;
-  color: $text-darck;
+  color: $text-dark;
+  margin: 0;
+}
+
+.contacts__list-mail {
+  font-size: 14px;
+  color: $text-dark;
   margin: 0;
 
   &--mail {
-    color: $text-darck;
+    color: $text-dark;
     text-decoration: underline $color-aqua-line;
   }
 }
