@@ -2,4 +2,21 @@
   margin-top: 29px;
 }
 
+.form__group-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $title-aqua-light;
+  text-transform: uppercase;
+  text-align: left;
+}
 
+.form__note {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.form__button {
+  margin-top: 30px;
+}
