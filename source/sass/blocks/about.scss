@@ -1,5 +1,14 @@
 .about {
   padding-top: 31px;
+
+  @include tablet() {
+    padding-top: 55px;
+  }
+
+  @include desktop() {
+    padding-top: 68px;
+    padding-left: 225px;
+  }
 }
 
 .about__title {
@@ -13,6 +22,7 @@
 .about__list {
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
 }
 
 .about__item {
@@ -20,4 +30,5 @@
   font-weight: 700;
   line-height: 20px;
   color: $title-dark;
+  padding: 83px 0 0 0;
 }
