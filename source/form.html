@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Mishka: Вязание на заказ</title>
 </head>
@@ -10,10 +11,16 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="img/logo-header.svg" width="86" height="35" alt="Логотип Мишка">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo/logo-dheader.svg" width="149" height="72"
+          alt="Логотип Мишка">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-theader.svg" width="113" height="46"
+          alt="Логотип Мишка">
+        <img src="img/logo/logo-mheader.svg" width="86" height="35" alt="Логотип Мишка">
+      </picture>
     </a>
+    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
     <nav class="page-header__navigation navigation">
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="navigation__wrapper">
         <ul class="navigation__list site-list">
           <li class="site-list__item">
@@ -126,13 +133,16 @@
           <fieldset class="form__group">
             <legend class="form__group-title">ФИО</legend>
             <label class="form__label label" for="name">Имя:
-              <input class="form__input input" type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
+              <input class="form__input input" type="text" name="name" placeholder="Введите ваше имя*" id="name"
+                required>
             </label>
             <label class="form__label label" for="surname">Фамилия:
-              <input class="form__input input" type="text" name="surname" placeholder="Укажите фамилию*" id="surname" required>
+              <input class="form__input input" type="text" name="surname" placeholder="Укажите фамилию*" id="surname"
+                required>
             </label>
             <label class="form__label label" for="middlename">Отчество:
-              <input class="form__input input" type="text" name="middlename" id="middlename" placeholder="Отчество, если желаете">
+              <input class="form__input input" type="text" name="middlename" id="middlename"
+                placeholder="Отчество, если желаете">
             </label>
           </fieldset>
           <fieldset class="form__group">
