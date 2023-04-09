@@ -1,0 +1,30 @@
+.page-main__title {
+  background-color: $color-white-darck;
+  padding: 74px 0 74px 0;
+  margin: 0;
+
+  @include tablet() {
+    padding: 100px 0 87px 0;
+  }
+
+  @include desktop() {
+    padding: 101px 0 113px 0;
+  }
+}
+
+.page-name__title {
+  font-size: 27px;
+  font-weight: 700;
+  color: $title-dark;
+  margin: 0;
+
+  @include tablet() {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include desktop() {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

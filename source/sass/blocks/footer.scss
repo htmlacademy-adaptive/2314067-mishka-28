@@ -1,0 +1,38 @@
+.page-footer {
+  padding: 30px 0 33px 0;
+  background-color: $color-white-darck;
+
+  @include tablet() {
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__logo {
+  display: none;
+
+  @include tablet() {
+    display: block;
+  }
+}
+
+.page-footer__social-list {
+  margin: 0 auto;
+
+  @include tablet() {
+    margin: 0;
+  }
+}
+
+.copyright__text {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $title-dark;
+}

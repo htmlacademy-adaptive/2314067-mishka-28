@@ -1,0 +1,41 @@
+.page-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet() {
+    justify-content: start;
+  }
+
+  @include desktop() {
+    justify-content: center;
+  }
+}
+
+.page-header__logo {
+  display: inline-block;
+  padding: 22px 0 0 0;
+
+  @include tablet-only() {
+    padding: 22px 0 0 0;
+  }
+
+  @include desktop() {
+    padding: 9px 0 0 0;
+  }
+}
+
+.page-header__toggle {
+  background-image: url("../img/menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  right: 30px;
+
+  @include tablet() {
+    display: none;
+  }
+}

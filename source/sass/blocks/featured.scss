@@ -1,0 +1,54 @@
+.featured {
+  padding: 31px 0 31px 0;
+  margin: 0;
+
+  @include tablet() {
+    padding-top: 39px;
+    margin-bottom: 55px;
+  }
+
+  @include desktop() {
+    padding-top: 71px;
+    margin-bottom: 68px;
+  }
+}
+
+.featured__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $title-dark;
+  margin: 0;
+}
+
+.featured__topweek-titel {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $color-aqua-light;
+  text-transform: uppercase;
+  margin: 4px 0 0 0;
+}
+
+.featured__text {
+  line-height: 24px;
+  margin: 17px 0 0 0;
+}
+
+.featured__item {
+  line-height: 20px;
+}
+
+.featured__image {
+  margin-top: 28px;
+}
+
+.featured__price-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.featured__button {
+  margin-top: 25px;
+}

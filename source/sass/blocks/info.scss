@@ -1,0 +1,74 @@
+.info {
+  position: relative;
+  background-image: url("../img/info-images.jpg");
+  background-repeat: no-repeat;
+  background-position: center top -17px;
+  background-color: $color-background-img;
+}
+
+.info__title {
+  font-size: 27px;
+  font-weight: 700;
+  max-width: 260px;
+  color: $title-dark;
+  margin: 0 auto;
+  padding: 73px 0 120px 0;
+
+  @include tablet() {
+    max-width: 668px;
+    padding: 154px 0 375px 0;
+  }
+
+  @include desktop() {
+    max-width: 700px;
+    padding: 157px 0 355px 0;
+  }
+}
+
+.info__wrapper {
+  @include tablet() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.info__button {
+  display: flex;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: $color-white;
+  padding: 24px 0 31px 30px;
+
+  @include tablet () {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 0 34px 36px;
+    margin: 0;
+    width: 50%;
+    box-sizing: border-box;
+  }
+}
+
+.info__button--lamp {
+  background-image: url("../img/button-lamp.svg");
+  background-repeat: no-repeat;
+  background-position: top 23px right 36px;
+  background-color: $color-aqua-light;
+
+  @include tablet() {
+    background-position: top 30px right 36px;
+  }
+}
+
+.info__button--cube {
+  background-image: url("../img/button-cube.svg");
+  background-repeat: no-repeat;
+  background-position: top 21px right 27px;
+  background-color: $color-aqua;
+
+  @include tablet() {
+    background-position: top 31px right 33px;
+  }
+}

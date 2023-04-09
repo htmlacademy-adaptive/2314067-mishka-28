@@ -1,0 +1,48 @@
+.contacts {
+  padding: 38px 0 39px 0;
+
+  @include tablet() {
+    padding: 73px 0 57px 0;
+  }
+
+  @include desktop() {
+    padding: 94px 0 105px 224px;
+  }
+}
+
+.contacts__title {
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+  color: $title-dark;
+  margin: 0;
+}
+
+.contacts__list {
+  text-align: left;
+}
+
+.contacts__list-title {
+  font-size: 14px;
+}
+
+.contacts__list-text {
+  font-size: 14px;
+  color: $text-dark;
+  margin: 0;
+}
+
+.contacts__list-mail {
+  font-size: 14px;
+  color: $text-dark;
+  margin: 0;
+
+  &--mail {
+    color: $text-dark;
+    text-decoration: underline $color-aqua-line;
+  }
+}
+
+.contacts__map {
+  margin: 62px 0 0 0;
+}
