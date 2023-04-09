@@ -6,12 +6,6 @@
   @include mobile-only() {
     display: none;
   }
-
-  @include tablet() {
-    display: flex;
-    flex-direction: column;
-    max-width: 1149px;
-  }
 }
 
 .navigation__wrapper {
