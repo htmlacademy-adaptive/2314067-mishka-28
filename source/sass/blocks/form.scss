@@ -1,5 +1,9 @@
 .form {
   margin-top: 29px;
+
+  @include tablet() {
+    margin-top: 0;
+  }
 }
 
 .form__group-title {
@@ -11,12 +15,40 @@
   text-align: left;
 }
 
+.form__footer {
+  margin-top: 35px;
+  padding-bottom: 55px;
+
+
+  @include tablet() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  @include desktop() {
+    padding: 0 225px 50px 225px;
+  }
+}
+
 .form__note {
   font-size: 14px;
   line-height: 16px;
   margin: 0;
+
+  @include tablet() {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form__button {
   margin-top: 30px;
+
+  @include tablet() {
+    order: -1;
+    margin: 0;
+  }
 }

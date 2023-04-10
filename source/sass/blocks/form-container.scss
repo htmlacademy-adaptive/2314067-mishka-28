@@ -2,11 +2,36 @@
   font-size: 27px;
   font-weight: 700;
   color: $title-dark;
+  background-color: $color-white-darck;
   margin: 0 auto;
   padding: 73px 0 73px 0;
+
+  @include tablet() {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 101px 0 87px 0;
+  }
+
+  @include desktop() {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 102px 0 113px;
+  }
 }
 
 .form-container__text {
   font-size: 13px;
   line-height: 24px;
+  margin: 17px 30px 0 30px;
+  text-align: left;
+
+  @include tablet() {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 54px 50px 63px 50px;
+  }
+
+  @include desktop() {
+    margin: 99px 223px 63px 225px;
+  }
 }
