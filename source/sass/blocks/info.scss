@@ -1,9 +1,19 @@
 .info {
   position: relative;
-  background-image: url("../img/info-images.jpg");
+  background-image: url("../img/info-images-m.jpg");
   background-repeat: no-repeat;
-  background-position: center top -17px;
+  background-position: center top -30px;
   background-color: $color-background-img;
+
+  @include tablet() {
+    background-image: url("../img/info-images-t.jpg");
+    background-position: center bottom 12px;
+  }
+
+  @include desktop() {
+    background-image: url("../img/info-images-d.jpg");
+    background-position: center bottom 17px;
+  }
 }
 
 .info__title {
@@ -39,12 +49,13 @@
   line-height: 24px;
   text-decoration: none;
   color: $color-white;
-  padding: 24px 0 31px 30px;
+  padding: 24px 25% 31px 30px;
+  margin: 0 -30px;
 
   @include tablet () {
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 0 34px 36px;
+    padding: 25px 25% 46px 36px;
     margin: 0;
     width: 50%;
     box-sizing: border-box;
@@ -70,5 +81,9 @@
 
   @include tablet() {
     background-position: top 31px right 33px;
+  }
+
+  @include desktop() {
+    background-position: top 31px right 35px;
   }
 }

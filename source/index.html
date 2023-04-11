@@ -52,14 +52,16 @@
   </header>
   <main class="page-main">
     <section class="info">
-      <h1 class="info__title">Милые штуки ручной <br> работы для дома</h1>
-      <div class="info__wrapper">
-        <a class="info__button info__button--lamp" href="#">Предметы <br> интерьера</a>
-        <a class="info__button info__button--cube" href="#">Детские <br> игрушки</a>
+      <div class="container">
+        <h1 class="info__title">Милые штуки ручной <br> работы для дома</h1>
+        <div class="info__wrapper">
+          <a class="info__button info__button--lamp" href="#">Предметы <br> интерьера</a>
+          <a class="info__button info__button--cube" href="#">Детские <br> игрушки</a>
+        </div>
       </div>
     </section>
     <!-- Блок товара недели -->
-    <section class="featured">
+    <section class="featured container">
       <h2 class="featured__title">Вязаные корзинки</h2>
       <h3 class="featured__topweek-titel">Товар недели</h3>
       <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
@@ -78,7 +80,9 @@
           <dl class="featured__item-text">15 см</dl>
         </div>
       </dl>
-      <img class="featured__image" src="img/goods/triple-set.jpg" width="260" height="315" alt="Товар недели">
+      <picture class="featured__image">
+        <img class="featured__image-item" src="img/goods/triple-set.jpg" width="260" height="315" alt="Товар недели">
+      </picture>
       <div class="featured__price">
         <p class="featured__price-title">Цена: 990 руб.</p>
         <a class="featured__button button button--primary" href="#">Заказать</a>
