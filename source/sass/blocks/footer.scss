@@ -1,5 +1,6 @@
 .page-footer {
-  padding: 30px 0 33px 0;
+  padding-top: 25px;
+  padding-bottom: 30px;
   background-color: $color-white-darck;
 
   @include tablet() {
@@ -9,9 +10,11 @@
 }
 
 .page-footer__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include tablet() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {
@@ -22,6 +25,23 @@
   }
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+
+  @include tablet() {
+    margin-top: 8px;
+  }
+}
+
+.social__link--youtube {
+  margin-left: 31px;
+}
+
+.social__link--telegram {
+  margin-left: 35px;
+}
+
 .page-footer__social-list {
   margin: 0 auto;
 
@@ -30,9 +50,40 @@
   }
 }
 
-.copyright__text {
+.page-footer__copyright {
+  margin-top: 29px;
+
+  @include tablet() {
+    margin-top: 0;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
-  color: $title-dark;
+  align-items: center;
+  border-top: 1px solid $color-border;
+
+  @include tablet() {
+    border: none;
+  }
+
+  &__link {
+    width: 27px;
+    height: 34px;
+    color: $color-aqua-light;
+    margin-left: 22px;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-aqua-footer;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
+  }
 }

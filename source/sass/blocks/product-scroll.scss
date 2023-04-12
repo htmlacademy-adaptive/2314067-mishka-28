@@ -1,5 +1,6 @@
-.product {
-  padding: 30px 30px 0 30px;
+.product-scroll__list {
+  padding-top: 30px;
+  padding-left: 0;
   margin: 0;
   list-style-type: none;
 
@@ -19,7 +20,6 @@
 .product__item {
   border: 1px solid $color-background-product;
   box-sizing: border-box;
-  margin: 0;
 
   @include mobile-only() {
     &:not(:first-of-type) {
@@ -78,10 +78,14 @@
 
 .product__text {
   font-size: 13px;
-  margin: 0;
+  margin: 6px 0 0 0;
 
   @include tablet() {
     font-size: 15px;
+  }
+
+  @include desktop() {
+    padding-bottom: 13px;
   }
 }
 
@@ -89,8 +93,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 23px 0 0 0;
+  padding-top: 18px;
+  margin-top: 17px;
   border-top: 1px solid $color-background-product;
+
+  @include tablet() {
+    margin-top: auto;
+  }
 }
 
 .product__text-price {
