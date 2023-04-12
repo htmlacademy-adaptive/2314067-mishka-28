@@ -1,48 +1,154 @@
 .contacts {
-  padding: 38px 0 39px 0;
+  padding-top: 44px;
+  padding-bottom: 39px;
+  margin: 0;
+  background-image: url("../img/decoration/zigzag-small.svg");
+  background-repeat: repeat-x;
+  background-position: top;
 
   @include tablet() {
-    padding: 73px 0 57px 0;
+    padding-top: 73px;
+    padding-bottom: 57px;
+    background-image: url("../img/decoration/zigzag-medium.svg");
   }
 
   @include desktop() {
-    padding: 94px 0 105px 224px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 94px;
+    padding-bottom: 105px;
+    padding-left: 224px;
+    background-image: url("../img/decoration/zigzag-large.svg");
+    background-repeat: no-repeat;
+    background-size: 1050px;
   }
 }
 
 .contacts__title {
   display: flex;
+  position: relative;
   font-size: 25px;
   font-weight: 700;
   color: $title-dark;
   margin: 0;
+
+  @include tablet() {
+    font-size: 43px;
+    line-height: 50px;
+    align-items: center;
+  }
+
+  @include desktop() {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 46px;
+  }
+}
+
+.contacts__title::after {
+  @include tablet() {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    content: "";
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/decoration/flag.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @include desktop() {
+    left: -113px;
+    top: 62px;
+  }
 }
 
 .contacts__list {
   text-align: left;
-}
-
-.contacts__list-title {
-  font-size: 14px;
-}
-
-.contacts__list-text {
-  font-size: 14px;
-  color: $text-dark;
   margin: 0;
+
+  @include tablet-only() {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 39px;
+  }
 }
 
-.contacts__list-mail {
+.contacts__item {
+  display: flex;
+  margin-top: 28px;
+
+  @include tablet() {
+    margin-top: 40px;
+  }
+
+  @include desktop() {
+    margin-top: 28px;
+  }
+}
+
+.contacts__item-title {
+  width: 76px;
   font-size: 14px;
-  color: $text-dark;
+
+  @include tablet() {
+    width: 81px;
+    font-size: 17px;
+  }
+
+  @include desktop() {
+    width: 82px;
+  }
+}
+
+.contacts__item-text {
+  font-size: 14px;
   margin: 0;
 
   &--mail {
     color: $text-dark;
     text-decoration: underline $color-aqua-line;
   }
+
+  @include tablet() {
+    font-size: 17px;
+  }
 }
 
 .contacts__map {
-  margin: 62px 0 0 0;
+  width: 100vw;
+  height: 454px;
+  margin: 62px -30px 0 -30px;
+
+  @include tablet() {
+    margin: 49px -50px 0 -50px;
+  }
+
+  @include desktop() {
+    width: 100%;
+    grid-area: 1 / 2 / 4 / 3;
+    margin: 0;
+  }
+}
+
+.contacts__map-item {
+  height: 100%;
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+.contacts__button {
+  margin-top: 42px;
+  width: 100%;
+
+  @include tablet() {
+    margin-top: 55px;
+    width: 230px;
+  }
+
+  @include desktop() {
+    margin-top: auto;
+  }
 }

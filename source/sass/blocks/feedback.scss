@@ -4,8 +4,10 @@
   margin: 0;
 
   @include tablet() {
-    padding: 83px 0 47px 0;
-    margin: 83px 0 68px 0;
+    padding-top: 83px;
+    padding-bottom: 47px;
+    margin-top: 83px;
+    margin-bottom: 68px;
     background-image: url("../img/feedback-background-t.jpg");
     background-repeat: no-repeat;
     background-position: center left;
