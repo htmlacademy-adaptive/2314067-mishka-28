@@ -54,14 +54,64 @@
   }
 
   &:first-child {
-    // background-image: url("");
+    background-image: url("../img/about/flower.svg");
     background-position: top 28px left 8px;
 
     @include tablet() {
       order: 1;
       background-position: top 41px left 8px;
     }
-}
+  }
+
+  &:nth-child(2) {
+    background-image: url("../img/about/money.svg");
+    background-position: top 30px left;
+
+    @include tablet() {
+      order: 3;
+      background-position: top 57px left 1px;
+    }
+  }
+
+  &:nth-child(3) {
+    background-image: url("../img/about/heart.svg");
+    background-position: top 35px left 7px;
+
+    @include tablet() {
+      order: 5;
+      background-position: top 63px left 8px;
+    }
+  }
+
+  &:nth-child(4) {
+    background-image: url("../img/about/yarn.svg");
+    background-position: top 32px left 3px;
+
+    @include tablet() {
+      order: 2;
+      background-position: top 45px left 3px;
+    }
+  }
+
+  &:nth-child(5) {
+    background-image: url("../img/about/rocket.svg");
+    background-position: top 33px left -6px;
+
+    @include tablet() {
+      order: 4;
+      background-position: top 59px left -6px;
+    }
+  }
+
+  &:last-child {
+    background-image: url("../img/about/gift.svg");
+    background-position: top 32px left 3px;
+
+    @include tablet() {
+      order: 6;
+      background-position: top 58px left 3px;
+    }
+  }
 }
 
 .about__text {

@@ -1,15 +1,45 @@
 .feedback {
-  padding: 58px 0 0 30px;
+  padding-top: 58px;
+  padding-bottom: 45px;
   margin: 0;
 
   @include tablet() {
-    padding-top: 82px;
-    margin-bottom: 68px;
+    padding: 83px 0 47px 0;
+    margin: 83px 0 68px 0;
+    background-image: url("../img/feedback-background-t.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
   }
 
   @include desktop() {
     padding: 90px auto 67px auto;
     margin: 0;
+  }
+
+  @include desktop() {
+    margin: 90px auto 67px auto;
+    padding: 78px 50px 96px 224px;
+    background-position: center left 50px;
+  }
+}
+
+.feedback__title {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  color: $title-dark;
+  margin: 0;
+
+  @include tablet() {
+    font-size: 43px;
+    line-height: 50px;
+    order: -2;
+    max-width: 60%;
+  }
+
+  @include desktop() {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -26,17 +56,13 @@
 .feedback__list {
   list-style-type: none;
   text-decoration: none;
+  margin: 0;
   padding: 0;
-  margin: 0;
   text-align: left;
-}
 
-.feedback__title {
-  font-size: 25px;
-  font-weight: 700;
-  text-align: left;
-  color: $title-dark;
-  margin: 0;
+  @include tablet() {
+    margin-top: 24px;
+  }
 }
 
 .feedback__text {
@@ -77,19 +103,27 @@
 
 .feedback__button-wrapper {
   margin-top: 30px;
+
+  @include tablet() {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 19px;
+  }
 }
 
-.feedback__button {
+.feedback__button--previous,
+.feedback__button--next {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   width: 50px;
   height: 26px;
-  outline: none;
+  padding: 0;
 }
 
 .feedback__button--previous {
   background-image: url("../img/arrow-left.svg");
-  margin-right: 80px;
+  margin-right: 42px;
 
 
   @include tablet() {
@@ -102,5 +136,17 @@
 }
 
 .feedback__add-review {
+  width: 100%;
+  justify-content: center;
   margin: 38px 0 0 0;
+
+  @include tablet() {
+    order: -1;
+    width: auto;
+    max-width: 40%;
+    min-width: 175px;
+    font-size: 17px;
+    margin-top: 0;
+    margin-left: auto;
+  }
 }
