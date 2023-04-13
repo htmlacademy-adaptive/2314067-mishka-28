@@ -51,7 +51,7 @@
 }
 
 .page-footer__copyright {
-  margin-top: 29px;
+  margin-top: 28px;
 
   @include tablet() {
     margin-top: 0;
@@ -66,6 +66,7 @@
   line-height: 18px;
   align-items: center;
   border-top: 1px solid $color-border;
+  padding-top: 29px;
 
   @include tablet() {
     border: none;

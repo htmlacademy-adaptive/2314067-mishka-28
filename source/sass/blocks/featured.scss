@@ -17,7 +17,7 @@
   }
 
   @include desktop() {
-    grid-template-columns: auto 292px auto;
+    grid-template-columns: 232px 292px auto;
     grid-template-areas: "ftopweek ftitle fimg" "ftopweek ftext fimg" "ftopweek flist fimg" "ftopweek fprice fimg";
     padding-top: 71px;
     padding-bottom: 73px;
@@ -57,12 +57,14 @@
   color: $color-aqua-light;
   text-transform: uppercase;
   margin: 4px 0 0 0;
+  padding: 0;
 
   @include tablet() {
     width: 100px;
     margin-left: auto;
     font-size: 17px;
     line-height: 17px;
+    text-align: center;
   }
 
   @include desktop {
@@ -75,6 +77,7 @@
   grid-area: ftext;
   line-height: 24px;
   margin: 17px 0 0 0;
+  align-self: start;
 
   @include tablet() {
     font-size: 17px;
@@ -83,8 +86,8 @@
   }
 
   @include desktop() {
-    margin: -24px 0 0;
-    max-width: 292px;
+    margin: 35px 0 0 0;
+    max-width: 300px;
   }
 }
 
@@ -97,7 +100,7 @@
   }
 
   @include desktop() {
-    margin-top: -9px;
+    margin-top: 60px;
   }
 }
 
@@ -117,7 +120,7 @@
   margin: 0;
 }
 
-.featured__image-item {
+.featured__image {
   grid-area: fimg;
   margin-top: 28px;
 
@@ -129,6 +132,11 @@
   @include desktop() {
     margin: 0;
   }
+}
+
+.featured__image-item {
+  display: block;
+  margin: 0 auto;
 }
 
 .featured__price {

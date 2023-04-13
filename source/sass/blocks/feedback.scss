@@ -104,6 +104,8 @@
 }
 
 .feedback__button-wrapper {
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
 
   @include tablet() {
@@ -118,23 +120,22 @@
 .feedback__button--next {
   background-repeat: no-repeat;
   background-position: center center;
-  width: 50px;
-  height: 26px;
+  min-width: 130px;
+  height: 52px;
   padding: 0;
+
+  @include tablet() {
+    border: none;
+  }
 }
 
 .feedback__button--previous {
   background-image: url("../img/arrow-left.svg");
-  margin-right: 42px;
-
-
-  @include tablet() {
-    margin-right: 37px;
-  }
 }
 
 .feedback__button--next {
   background-image: url("../img/arrow-right.svg");
+  border-left: none;
 }
 
 .feedback__add-review {
