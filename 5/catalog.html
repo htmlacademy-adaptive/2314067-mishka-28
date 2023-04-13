@@ -56,7 +56,7 @@
       <h1 class="page-name__title">Каталог товаров</h1>
     </div>
     <!-- Список товаров -->
-    <section class="product-scroll">
+    <section class="product-scroll container">
       <ul class="product-scroll__list product">
         <li class="product__item">
           <a class="product__logo-images" href="#">
@@ -101,20 +101,23 @@
       </ul>
     </section>
     <!-- Блок с видео -->
-    <section class="production">
+    <section class="production container">
       <div class="production__video video">
-        <img class="video__images" src="img/goods/production-video.jpg" width="260" height="150" alt="Превью видео">
+        <picture class="video__images">
+          <img class="video__images-item" src="img/goods/production-video-m.jpg" width="260" height="150"
+            alt="Превью видео">
+        </picture>
         <button class="video__button" type="button">
           <span class="visually-hidden">Воспроизвести видео</span>
         </button>
       </div>
-      <h2 class="production__title"><span>Процесс производства</span></h2>
+      <h2 class="production__title">Процесс производства</h2>
       <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
-      <a class="production__button button button--secondary" href="#">Сделать заказ</a>
+      <a class="production__button button button--primary" href="#">Сделать заказ</a>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
         <img src="img/logo/logo-footer.svg" width="102" height="34" alt="Логотип Мишка">
