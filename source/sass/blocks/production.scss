@@ -85,3 +85,36 @@
     max-width: 230px;
   }
 }
+
+.video {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__button {
+  height: 71px;
+  width: 95px;
+  border-radius: 19px;
+  border: none;
+  outline: 4px solid $color-white;
+  background-color: $color-aqua-light;
+  background-image: url("../img/goods/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include desktop() {
+    width: 96px;
+    height: 72px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+}
