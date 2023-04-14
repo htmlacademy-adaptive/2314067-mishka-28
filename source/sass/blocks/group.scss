@@ -25,17 +25,41 @@
   text-transform: uppercase;
   text-align: left;
   box-sizing: border-box;
+  padding: 0;
 
   @include tablet() {
     position: absolute;
-    top: 68px;
-    left: -4px;
+    top: 66px;
+    left: 0;
   }
 
   @include desktop() {
-    top: 75px;
+    top: 67px;
     left: 46px;
   }
+}
+
+.group__label {
+  display: block;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  color: $title-dark;
+
+  @include tablet() {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.group__input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
 }
 
 .group--grid {
@@ -58,14 +82,63 @@
 .group--type {
   padding-top: 29px;
   padding-bottom: 30px;
+
+  @include tablet() {
+    padding-top: 33px;
+  }
+}
+
+.group--type .group__title {
+  @include tablet() {
+    top: 50px;
+  }
 }
 
 .group--color {
-  padding-top: 25px;
-  padding-bottom: 33px;
+  @include mobile-only() {
+    padding-top: 25px;
+    padding-bottom: 33px;
+  }
+}
+
+.group--color .group__title {
+  @include tablet() {
+    top: 66px;
+  }
+
+  @include desktop() {
+    top: 67px;
+  }
 }
 
 .group--name {
   padding-top: 33px;
   padding-bottom: 29px;
+
+  @include tablet() {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop() {
+    padding-right: 173px;
+  }
+}
+
+.group--name .group__label:not(:first-of-type) {
+  margin-top: 22px;
+
+  @include desktop() {
+    margin-top: 24px;
+  }
+}
+
+.group--name .input {
+  @include tablet() {
+    margin-left: 25px;
+  }
+
+  @include desktop() {
+    margin-left: 30px;
+  }
 }
