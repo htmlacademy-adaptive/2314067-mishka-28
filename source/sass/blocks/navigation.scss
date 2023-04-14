@@ -1,4 +1,15 @@
-.page-header__navigation {
+.site-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.user-list {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -24,7 +35,7 @@
   }
 }
 
-.site-list__link {
+.navigation__item__link {
   color: $title-dark;
   text-decoration: none;
 }
