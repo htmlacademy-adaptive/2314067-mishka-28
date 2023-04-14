@@ -1,32 +1,28 @@
 .contacts {
-  padding-top: 44px;
-  padding-bottom: 39px;
-  margin: 0;
+  padding: 44px 30px 39px 30px;
+  margin: 0 auto;
   background-image: url("../img/decoration/zigzag-small.svg");
   background-repeat: repeat-x;
   background-position: top;
 
   @include tablet() {
-    padding-top: 73px;
-    padding-bottom: 57px;
+    padding: 73px 50px 57px 50px;
     background-image: url("../img/decoration/zigzag-medium.svg");
   }
 
   @include desktop() {
     display: grid;
     grid-template-columns: 40% 60%;
-    padding-top: 94px;
-    padding-bottom: 105px;
-    padding-left: 224px;
+    padding: 94px 50px 105px 113px;
     background-image: url("../img/decoration/zigzag-large.svg");
     background-repeat: no-repeat;
     background-size: 1050px;
+    max-width: 1150px;
   }
 }
 
 .contacts__title {
   display: flex;
-  position: relative;
   font-size: 25px;
   font-weight: 700;
   color: $title-dark;
@@ -36,33 +32,40 @@
     font-size: 43px;
     line-height: 50px;
     align-items: center;
+    width: 47px;
+    height: 81px;
+    padding: 0 625px 0 0;
+    background-image: url("../img/decoration/flag.svg");
+    background-repeat: no-repeat;
+    background-position: right;
   }
 
   @include desktop() {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 46px;
+    padding: 46px 0 0 111px;
+    background-position: left;
   }
 }
 
-.contacts__title::after {
-  @include tablet() {
-    position: absolute;
-    top: 0;
-    right: 3px;
-    content: "";
-    width: 47px;
-    height: 81px;
-    background-image: url("../img/decoration/flag.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+// .contacts__title::after {
+//   @include tablet() {
+//     position: absolute;
+//     top: 0;
+//     right: 3px;
+//     content: "";
+//     width: 47px;
+//     height: 81px;
+//     background-image: url("../img/decoration/flag.svg");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
 
-  @include desktop() {
-    left: -113px;
-    top: 42px;
-  }
-}
+//   @include desktop() {
+//     left: -113px;
+//     top: 42px;
+//   }
+// }
 
 .contacts__list {
   text-align: left;
@@ -104,7 +107,7 @@
 }
 
 .contacts__item-text {
-  width: 183px;
+  width: 100%;
   font-size: 14px;
   margin: 0;
 
@@ -120,7 +123,7 @@
 
 .contacts__map {
   height: 454px;
-  margin: 62px 0 0 0;
+  margin: 62px -30px 0 -30px;
 
   @include tablet() {
     margin: 49px -50px 0 -50px;
