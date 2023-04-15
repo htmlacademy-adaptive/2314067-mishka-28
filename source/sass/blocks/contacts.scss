@@ -72,9 +72,9 @@
   margin: 0;
 
   @include tablet-only() {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 39px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    column-gap: 25px;
   }
 }
 

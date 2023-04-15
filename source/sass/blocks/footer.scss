@@ -1,19 +1,14 @@
-.page-footer {
+.page-footer__wrapper {
   padding-top: 25px;
   padding-bottom: 30px;
   background-color: $color-white-darck;
 
   @include tablet() {
-    padding-top: 51px;
-    padding-bottom: 58px;
-  }
-}
-
-.page-footer__wrapper {
-  @include tablet() {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 51px;
+    padding-bottom: 58px;
   }
 }
 

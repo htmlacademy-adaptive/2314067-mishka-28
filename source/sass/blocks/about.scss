@@ -38,7 +38,7 @@
 
   @include tablet() {
     display: grid;
-    grid-template-columns: 265px 325px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 70px;
   }
 
@@ -52,6 +52,7 @@
   background-repeat: no-repeat;
 
   @include tablet() {
+    max-width: 576px;
     padding-top: 100px;
     box-sizing: border-box;
   }
