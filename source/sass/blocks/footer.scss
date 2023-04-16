@@ -1,7 +1,10 @@
+.page-footer {
+  background-color: $color-white-darck;
+}
+
 .page-footer__wrapper {
   padding-top: 25px;
   padding-bottom: 30px;
-  background-color: $color-white-darck;
 
   @include tablet() {
     display: flex;

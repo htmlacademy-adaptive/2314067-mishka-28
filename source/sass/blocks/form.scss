@@ -1,8 +1,15 @@
 .form {
-  margin-top: 29px;
+  padding: 0 30px;
+  margin: 29px auto 0 auto;
+  box-sizing: border-box;
 
   @include tablet() {
     margin-top: 0;
+    padding: 0;
+  }
+
+  @include desktop() {
+    max-width: 1150px;
   }
 }
 
@@ -20,13 +27,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 50px;
-    margin-top: 53px;
+    padding: 0 50px 50px 50px;
+    margin-top: 0;
   }
 
   @include desktop() {
-    margin-top: 49px;
-    padding: 0 175px 0 175px;
+    padding: 0 175px 50px 175px;
   }
 }
 

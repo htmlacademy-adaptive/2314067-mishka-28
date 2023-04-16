@@ -10,10 +10,12 @@
   @include tablet() {
     border-top: none;
     padding: 63px 0 50px 169px;
+    margin: 0 50px;
   }
 
   @include desktop() {
     padding-left: 174px;
+    max-width: 1150px;
   }
 }
 

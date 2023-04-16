@@ -7,7 +7,7 @@
 
   @include desktop() {
     padding-top: 68px;
-    padding-left: 225px;
+    padding-left: 175px;
   }
 }
 
@@ -35,9 +35,11 @@
   margin: 0 auto;
   list-style-type: none;
   text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  column-gap: 30px;
 
   @include tablet() {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 70px;
   }
