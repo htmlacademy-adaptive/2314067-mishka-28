@@ -31,4 +31,10 @@
     background-color: $color-aqua-light;
     padding: 18px 20px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-aqua-hover;
+  }
 }
