@@ -2,6 +2,7 @@
 @import "./global/fonts.scss";
 @import "./global/color.scss";
 @import "./global/mixin.scss";
+@import "./global/container.scss";
 
 // Components
 @import "./blocks/components/button.scss";
@@ -19,9 +20,11 @@
 @import "./blocks/featured.scss";
 @import "./blocks/about.scss";
 @import "./blocks/feedback.scss";
+@import "./blocks/slider.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/product-scroll.scss";
 @import "./blocks/production.scss";
-@import "./blocks/form-container.scss";
 @import "./blocks/form.scss";
+@import "./blocks/group.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/modal.scss";

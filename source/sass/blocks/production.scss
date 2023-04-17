@@ -1,38 +1,79 @@
 .production {
   display: flex;
   flex-direction: column;
-  padding: 30px 30px 58px 30px;
+  padding-top: 30px;
+  padding-bottom: 58px;
 
   @include tablet() {
-    padding: 53px 50px 64px 50px;
+    padding-top: 53px;
+    padding-bottom: 64px;
   }
 
   @include desktop() {
     display: grid;
     grid-template-columns: 683px auto;
-    padding: 57px 50px 105px 50px;
+    padding-top: 57px;
+    padding-bottom: 105px;
+  }
+}
+
+.production__video {
+  @include mobile-only() {
+    margin-top: 26px;
+  }
+
+  @include desktop() {
+    grid-area: 1 / 1 / 4 / 2;
   }
 }
 
 .production__title {
   display: flex;
+  position: relative;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  padding-top: 22px;
+  text-align: left;
   color: $title-dark;
+  padding-top: 22px;
+  padding-left: 91px;
   margin: 0;
   order: -1;
 
   @include tablet() {
+    padding-left: 107px;
+    padding-top: 41px;
     order: 0;
   }
 
   @include desktop() {
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 47px;
-    padding-left: 80px;
+    padding-top: 96px;
+    padding-left: 79px;
+    max-width: 180px;
+  }
+}
+
+.production__title::after {
+  position: absolute;
+  top: 35px;
+  left: 34px;
+  content: "";
+  width: 32px;
+  height: 22px;
+  background-image: url("../img/goods/camera.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include tablet() {
+    top: 39px;
+    left: 42px;
+  }
+
+  @include desktop() {
+    top: 47px;
+    left: 79px;
   }
 }
 
@@ -46,19 +87,65 @@
   @include tablet() {
     font-size: 15px;
     line-height: 30px;
-    margin: 25px 0 0 0;
+    margin-top: 25px;
     padding-left: 40px;
   }
 
   @include desktop() {
+    margin-top: 28px;
     padding-left: 80px;
   }
 }
 
 .production__button {
-  margin: 41px auto 33px auto;
+  margin: 41px auto 33px;
 
   @include tablet() {
-    margin: 40px auto 46px auto;
+    margin-top: 41px;
+    margin-bottom: 46px;
+    width: 87%;
+  }
+
+  @include desktop () {
+    margin: 52px auto auto 80px;
+    max-width: 230px;
+  }
+}
+
+.video {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__images {
+  position: relative;
+}
+
+.video__button {
+  position: absolute;
+  height: 71px;
+  width: 95px;
+  border-radius: 19px;
+  border: none;
+  outline: 4px solid $color-white;
+  background-color: $color-aqua-light;
+  background-image: url("../img/goods/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include desktop() {
+    width: 96px;
+    height: 72px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    transform: scale(0.8);
+    opacity: 0.6;
   }
 }

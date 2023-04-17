@@ -1,0 +1,146 @@
+.group {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  border-top: 1px solid $color-aqua-line;
+  padding: 30px 0;
+  margin: 0;
+
+  @include tablet() {
+    border-top: none;
+    padding: 63px 0 50px 169px;
+    margin: 0 50px;
+  }
+
+  @include desktop() {
+    padding-left: 174px;
+    max-width: 1150px;
+  }
+}
+
+.group__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $title-aqua-light;
+  text-transform: uppercase;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 0;
+
+  @include tablet() {
+    position: absolute;
+    top: 66px;
+    left: 0;
+  }
+
+  @include desktop() {
+    top: 67px;
+    left: 46px;
+  }
+}
+
+.group__label {
+  display: block;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  color: $title-dark;
+
+  @include tablet() {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.group__input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.group--grid {
+  @include tablet() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px 29px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop() {
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 24px 29px;
+    padding-top: 48px;
+    padding-bottom: 52px;
+  }
+}
+
+.group--type {
+  padding-top: 29px;
+  padding-bottom: 30px;
+
+  @include tablet() {
+    padding-top: 33px;
+  }
+}
+
+.group--type .group__title {
+  @include tablet() {
+    top: 50px;
+  }
+}
+
+.group--color {
+  @include mobile-only() {
+    padding-top: 25px;
+    padding-bottom: 33px;
+  }
+}
+
+.group--color .group__title {
+  @include tablet() {
+    top: 66px;
+  }
+
+  @include desktop() {
+    top: 67px;
+  }
+}
+
+.group--name {
+  padding-top: 33px;
+  padding-bottom: 29px;
+
+  @include tablet() {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop() {
+    padding-right: 173px;
+  }
+}
+
+.group--name .group__label:not(:first-of-type) {
+  margin-top: 22px;
+
+  @include desktop() {
+    margin-top: 24px;
+  }
+}
+
+.group--name .input {
+  @include tablet() {
+    margin-left: 25px;
+  }
+
+  @include desktop() {
+    margin-left: 30px;
+  }
+}

@@ -1,18 +1,20 @@
-.page-main__title {
+.page-main__item {
+  padding-top: 74px;
+  padding-bottom: 74px;
   background-color: $color-white-darck;
-  padding: 74px 0 74px 0;
-  margin: 0;
 
   @include tablet() {
-    padding: 100px 0 87px 0;
+    padding-top: 101px;
+    padding-bottom: 87px;
   }
 
   @include desktop() {
-    padding: 101px 0 113px 0;
+    padding-top: 102px;
+    padding-bottom: 113px;
   }
 }
 
-.page-name__title {
+.page-main__item-title {
   font-size: 27px;
   font-weight: 700;
   color: $title-dark;
@@ -26,5 +28,25 @@
   @include desktop() {
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.page-form__text {
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  margin: 17px auto 0 auto;
+  padding: 0 30px;
+
+  @include tablet() {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 54px;
+    padding: 0 50px;
+  }
+
+  @include desktop() {
+    margin-top: 99px;
+    max-width: 702px;
   }
 }

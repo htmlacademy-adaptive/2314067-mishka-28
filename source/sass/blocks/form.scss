@@ -1,22 +1,60 @@
 .form {
-  margin-top: 29px;
+  padding: 0 30px;
+  margin: 29px auto 0 auto;
+  box-sizing: border-box;
+
+  @include tablet() {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  @include desktop() {
+    max-width: 1150px;
+  }
 }
 
-.form__group-title {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 16px;
-  color: $title-aqua-light;
-  text-transform: uppercase;
-  text-align: left;
+.form__background {
+  @include tablet() {
+    background-color: $color-white-darck;
+  }
+}
+
+.form__footer {
+  margin-top: 17px;
+  padding-bottom: 55px;
+
+  @include tablet() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 50px 50px;
+    margin-top: 0;
+  }
+
+  @include desktop() {
+    padding: 0 175px 50px 175px;
+  }
 }
 
 .form__note {
   font-size: 14px;
   line-height: 16px;
   margin: 0;
+
+  @include tablet() {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form__button {
+  width: 100%;
   margin-top: 30px;
+
+  @include tablet() {
+    min-width: 230px;
+    width: auto;
+    order: -1;
+    margin: 0;
+  }
 }
