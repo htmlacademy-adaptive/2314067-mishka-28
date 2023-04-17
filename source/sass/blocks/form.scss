@@ -7,10 +7,6 @@
     margin-top: 0;
     padding: 0;
   }
-
-  @include desktop() {
-    max-width: 1150px;
-  }
 }
 
 .form__background {
@@ -20,8 +16,10 @@
 }
 
 .form__footer {
+  margin: 0 auto;
   margin-top: 17px;
   padding-bottom: 55px;
+  box-sizing: border-box;
 
   @include tablet() {
     display: flex;
@@ -32,7 +30,8 @@
   }
 
   @include desktop() {
-    padding: 0 175px 50px 175px;
+    padding: 0 0 50px 174px;
+    max-width: 1150px;
   }
 }
 
