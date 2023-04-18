@@ -20,7 +20,7 @@
       flex-direction: column;
     }
 
-    .header__toggle {
+    .page-header__toggle {
       display: none;
     }
   }
@@ -50,29 +50,23 @@
   }
 }
 
-.page-header__toggle--clossed {
+.page-header__toggle {
   position: absolute;
   border: none;
   width: 21px;
-  height: 2px;
+  height: 20px;
   right: 31px;
   top: 32px;
-  background-color: $color-background-burger;
-  box-shadow: 0 6px 0 0 $color-background-burger, 0 12px 0 0 $color-background-burger;
+  background-color: inherit;
+  background-image: url("../img/decoration/menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 
   @include tablet() {
     display: none;
   }
 }
 
-.page-header__toggle--opened {
-  position: absolute;
-  border: none;
-  width: 21px;
-  height: 2px;
-  right: 31px;
-  top: 32px;
-  background-color: $color-background-burger;
-  transform: rotate(45deg);
-  box-shadow: none;
+.page-header__toggle--clossed {
+  background-image: url("../img/decoration/menu-close.svg");
 }
