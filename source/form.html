@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico"> <!-- 32x32 -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png"> <!-- 180x180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>Mishka: Вязание на заказ</title>
 </head>
@@ -141,13 +145,14 @@
           </label>
         </fieldset>
         <div class="form__background">
-          <fieldset class="form__group group group--feedback">
-            <legend class="visually-hidden">Обратная связь</legend>
-            <span class="group__title">ТЕЛ</span>
+          <fieldset class="form__group group group--phone">
+            <legend class="group__title">ТЕЛ</legend>
             <label class="group__label" for="number">
               <input class="group__input input" type="text" name="telephone" placeholder="+7 XXX XXX XX XX*" id="number"
                 required></label>
-            <span class="group__title">E-MAIL</span>
+          </fieldset>
+          <fieldset class="form__group group group--email">
+            <legend class="group__title">E-MAIL</legend>
             <label class="group__label" for="email">
               <input class="group__input input" type="text" name="e-mail" placeholder="Ваш Email*" id="email"
                 required></label>

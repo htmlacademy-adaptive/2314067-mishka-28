@@ -4,12 +4,13 @@
   background-color: $color-white-darck;
 
   @include tablet() {
-    padding-top: 101px;
+    margin-top: 120px; // подогнать по рр
+    padding-top: 100px;
     padding-bottom: 87px;
   }
 
   @include desktop() {
-    padding-top: 102px;
+    padding-top: 101px;
     padding-bottom: 113px;
   }
 }
