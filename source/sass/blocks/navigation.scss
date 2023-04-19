@@ -22,19 +22,15 @@
   @include tablet() {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "user user" "basic aftertext";
-    position: absolute;
+    grid-template-areas: ". user" "basic aftertext";
     box-sizing: border-box;
-    top: 0;
-    left: 0;
     max-width: 1150px;
-    padding: 0 50px;
     margin: 0 auto;
-    z-index: 1;
   }
 
   @include desktop() {
-    grid-template-areas: "basic secondary" "extra aftertext";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "basic user" "extra aftertext";
   }
 
   &--no-js {
@@ -111,7 +107,7 @@
 
     &:first-of-type .navigation__link {
       padding-left: 0;
-      padding-right: 5px;
+      margin-right: 36px;
     }
   }
 }
@@ -133,13 +129,18 @@
   grid-area: user;
 
   @include tablet() {
-    margin-left: auto;
+    margin-left: -9px;
+  }
+
+  @include desktop() {
+    margin-left: 182px;
   }
 }
 
 .navigation__link {
   @include tablet() {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -190,8 +191,7 @@
   background-image: url("../img/decoration/basket.svg");
 
   @include tablet() {
-    padding-left: 31px;
-    padding-right: 25px;
+    padding: 35px 31px 35px 25px;
   }
 }
 
@@ -199,7 +199,7 @@
   background-image: url("../img/decoration/search.svg");
 
   @include tablet() {
-    padding: 36px 31px 34px 33px;
+    padding: 35px 31px 35px 33px;
     border-left: 1px solid rgba($title-dark, 0.1);
     border-right: 1px solid rgba($title-dark, 0.1);
   }

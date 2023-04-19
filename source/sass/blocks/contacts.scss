@@ -48,25 +48,6 @@
   }
 }
 
-// .contacts__title::after {
-//   @include tablet() {
-//     position: absolute;
-//     top: 0;
-//     right: 3px;
-//     content: "";
-//     width: 47px;
-//     height: 81px;
-//     background-image: url("../img/decoration/flag.svg");
-//     background-repeat: no-repeat;
-//     background-position: center;
-//   }
-
-//   @include desktop() {
-//     left: -113px;
-//     top: 42px;
-//   }
-// }
-
 .contacts__list {
   text-align: left;
   margin: 0;

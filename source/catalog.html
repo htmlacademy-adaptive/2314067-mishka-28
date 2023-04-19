@@ -10,6 +10,7 @@
 
 <body class="page__body">
   <header class="page-header page-header--no-js">
+    <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1150px)" srcset="img/logo/logo-dheader.svg" width="149" height="72"
@@ -19,9 +20,11 @@
         <img src="img/logo/logo-mheader.svg" width="86" height="35" alt="Логотип Мишка">
       </picture>
     </a>
-    <button class="page-header__toggle page-header__toggle--clossed" type="button">
+    <!-- Добавляет класс page-header__toggle--clossed -->
+    <button class="page-header__toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span></button>
-    <nav class="navigation navigation--open navigation--no-js">
+      <!-- Добавляет класс navigation--open -->
+    <nav class="navigation navigation--no-js">
       <span class="visually-hidden">Открыть/закрыть меню</span></button>
       <ul class="navigation__list navigation__list--basic site-list">
         <li class="navigation__item">
@@ -53,6 +56,7 @@
       </ul>
       <span class="navigation__text">Бесплатная доставка по России</span>
     </nav>
+  </div>
   </header>
   <main class="page-main">
     <div class="page-main__item">
