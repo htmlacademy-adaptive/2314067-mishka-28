@@ -13,6 +13,7 @@
   @include desktop() {
     display: grid;
     grid-template-columns: 40% 60%;
+    column-gap: 23px;
     padding: 94px 50px 105px 113px;
     background-image: url("../img/decoration/zigzag-large.svg");
     background-repeat: no-repeat;
@@ -43,7 +44,8 @@
   @include desktop() {
     font-size: 53px;
     line-height: 57px;
-    padding: 46px 0 0 111px;
+    padding: 46px 0 0 100px;
+    margin-left: -50px;
     background-position: left;
   }
 }
@@ -69,6 +71,7 @@
 
   @include desktop() {
     margin-top: 28px;
+    margin-left: 50px;
   }
 }
 

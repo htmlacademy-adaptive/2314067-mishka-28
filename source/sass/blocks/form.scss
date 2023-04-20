@@ -31,6 +31,7 @@
 
   @include desktop() {
     padding: 0 0 50px 174px;
+    margin: 0 auto;
     max-width: 1050px;
   }
 }
@@ -43,6 +44,10 @@
   @include tablet() {
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @include desktop() {
+    padding: 0 174px 0 0;
   }
 }
 

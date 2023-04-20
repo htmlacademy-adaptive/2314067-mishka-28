@@ -9,7 +9,7 @@
 
   @include tablet() {
     display: grid;
-    grid-template-columns: 292px auto;
+    grid-template-columns: 500px auto;
     grid-template-areas: "ftitle ftopweek" "ftext fimg" "flist fimg" "fprice fimg";
     padding-top: 39px;
     padding-bottom: 52px;
@@ -17,7 +17,7 @@
   }
 
   @include desktop() {
-    grid-template-columns: 232px 292px auto;
+    grid-template-columns: 175px 305px auto;
     grid-template-areas: "ftopweek ftitle fimg" "ftopweek ftext fimg" "ftopweek flist fimg" "ftopweek fprice fimg";
     padding-top: 71px;
     padding-bottom: 73px;
@@ -38,7 +38,7 @@
   @include tablet() {
     font-size: 43px;
     line-height: 50px;
-    white-space: nowrap;
+    max-width: 450px;
   }
 
   @include desktop() {
@@ -46,6 +46,7 @@
     line-height: 57px;
     z-index: 1;
     padding-top: 61px;
+    max-width: 545px;
   }
 }
 
@@ -56,8 +57,7 @@
   line-height: 20px;
   color: $color-aqua-light;
   text-transform: uppercase;
-  margin: 4px 0 0 0;
-  padding: 0;
+  margin: 4px 0 0;
 
   @include tablet() {
     width: 100px;
@@ -83,6 +83,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: 38px;
+    max-width: 292px;
   }
 
   @include desktop() {
@@ -110,6 +111,10 @@
   text-align: left;
   border-bottom: 1px solid $color-background-product;
   padding: 10px 0 10px 0;
+
+  @include tablet() {
+    max-width: 292px;
+  }
 }
 
 .featured__item-title {
@@ -151,11 +156,11 @@
     margin-top: 57px;
     display: block;
     text-align: center;
+    max-width: 292px;
   }
 
   @include desktop() {
     margin-top: auto;
-    margin-left: -53px;
   }
 }
 

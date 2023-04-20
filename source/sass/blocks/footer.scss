@@ -68,6 +68,7 @@
 
   @include tablet() {
     border: none;
+    padding-top: 0;
   }
 
   &__link {

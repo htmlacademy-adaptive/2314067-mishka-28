@@ -1,3 +1,18 @@
+.info-container {
+  padding-top: 73px;
+  padding-bottom: 120px;
+
+  @include tablet() {
+    padding-top: 154px;
+    padding-bottom: 372px;
+  }
+
+  @include desktop() {
+    padding-top: 157px;
+    padding-bottom: 355px;
+  }
+}
+
 .info {
   position: relative;
   background-color: $color-background-img;
@@ -43,18 +58,16 @@
   color: $title-dark;
   max-width: 260px;
   margin: 0 auto;
-  padding-top: 73px;
-  padding-bottom: 120px;
 
   @include tablet() {
-    padding-top: 154px;
-    padding-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
     max-width: 668px;
   }
 
   @include desktop() {
-    padding-top: 157px;
-    padding-bottom: 355px;
+    font-size: 53px;
+    line-height: 57px;
     max-width: 700px;
   }
 }
