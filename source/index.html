@@ -93,7 +93,10 @@
         </div>
       </dl>
       <picture class="featured__image">
-        <img class="featured__image-item" src="img/goods/triple-set.jpg" width="260" height="315" alt="Товар недели">
+        <source media="(min-width: 1150px)" srcset="img/goods/triple-set-d.jpg 1x, img/goods/triple-set-d@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/goods/triple-set-t.jpg 1x, img/goods/triple-set-t@2x.jpg 2x">
+        <img class="featured__image-item" src="img/goods/triple-set-m.jpg" srcset="img/goods/triple-set-m@2x.jpg 2x"
+          width="260" height="315" alt="Товар недели">
       </picture>
       <div class="featured__price">
         <p class="featured__price-title">Цена: 990 руб.</p>
