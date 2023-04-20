@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico"> <!-- 32x32 -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png"> <!-- 180x180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>Mishka: Каталог товаров</title>
   <base href="https://htmlacademy-adaptive.github.io/2314067-mishka-28/6/">
@@ -11,6 +15,7 @@
 
 <body class="page__body">
   <header class="page-header page-header--no-js">
+    <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1150px)" srcset="img/logo/logo-dheader.svg" width="149" height="72"
@@ -20,9 +25,11 @@
         <img src="img/logo/logo-mheader.svg" width="86" height="35" alt="Логотип Мишка">
       </picture>
     </a>
-    <button class="page-header__toggle page-header__toggle--clossed" type="button">
+    <!-- Добавляет класс page-header__toggle--clossed -->
+    <button class="page-header__toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span></button>
-    <nav class="navigation navigation--open navigation--no-js">
+      <!-- Добавляет класс navigation--open -->
+    <nav class="navigation navigation--no-js">
       <span class="visually-hidden">Открыть/закрыть меню</span></button>
       <ul class="navigation__list navigation__list--basic site-list">
         <li class="navigation__item">
@@ -54,6 +61,7 @@
       </ul>
       <span class="navigation__text">Бесплатная доставка по России</span>
     </nav>
+  </div>
   </header>
   <main class="page-main">
     <div class="page-main__item">
