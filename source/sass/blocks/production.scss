@@ -149,3 +149,17 @@
     opacity: 0.6;
   }
 }
+
+.video__images-item {
+  vertical-align: bottom;
+
+  @include tablet() {
+    width: 668px;
+    height: 455px;
+  }
+
+  @include desktop() {
+    width: 683px;
+    height: 455px;
+  }
+}

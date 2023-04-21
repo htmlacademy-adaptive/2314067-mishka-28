@@ -20,9 +20,19 @@
   }
 }
 
-// Поменять img на класс тэга <picture>
-.product__item img {
+.product__logo-img {
   width: 100%;
+  vertical-align: bottom;
+
+  @include tablet() {
+    width: 334px;
+    height: 334px;
+  }
+
+  @include desktop() {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .product__item {
@@ -44,7 +54,7 @@
   }
 }
 
-.product__logo-images {
+.product__logo-link {
   display: block;
   margin: 0;
   padding: 0;
