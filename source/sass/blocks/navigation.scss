@@ -21,7 +21,7 @@
 
   @include tablet() {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 350px;
     grid-template-areas: ". user" "basic aftertext";
     box-sizing: border-box;
     max-width: 1150px;
@@ -29,8 +29,8 @@
   }
 
   @include desktop() {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "basic user" "extra aftertext";
+    grid-template-columns: 1fr 160px 1fr;
+    grid-template-areas: "basic . user" "extra . aftertext";
   }
 
   &--no-js {
@@ -43,6 +43,7 @@
 
 .navigation__item {
   @include mobile-only() {
+    display: flex;
     position: relative;
     padding: 29px 30px 26px 30px;
     background-color: $color-white;
@@ -128,19 +129,15 @@
 .navigation__list--user {
   grid-area: user;
 
-  @include tablet() {
-    margin-left: -9px;
-  }
-
   @include desktop() {
-    margin-left: 182px;
+    margin-left: auto;
   }
 }
 
 .navigation__link {
   @include mobile-only() {
     position: relative;
-    padding: 0 46px 0 0;
+    padding: 0 0 0 46px;
   }
 
   @include tablet() {
@@ -148,6 +145,38 @@
     align-items: center;
   }
 }
+
+.navigation__link--search,
+.navigation__link--basket {
+  @include mobile-only() {
+    position: relative;
+    padding: 0;
+  }
+
+  @include tablet() {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 35px 0 35px 0;
+  }
+}
+
+.navigation__link--search {
+  @include tablet() {
+    border-left: 1px solid rgba($title-dark, 0.1);
+    border-right: 1px solid rgba($title-dark, 0.1);
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+}
+
+.navigation__link--basket {
+  @include tablet() {
+    padding-left: 30px;
+  }
+}
+
 
 .navigation__list--extra {
   display: none;
@@ -195,17 +224,19 @@
 .navigation__icon--basket {
   background-image: url("../img/decoration/basket.svg");
 
+  @include mobile-only() {
+    margin-right: 25px;
+  }
+
   @include tablet() {
-    padding: 35px 31px 35px 25px;
+    margin-right: 32px;
   }
 }
 
 .navigation__icon--search {
   background-image: url("../img/decoration/search.svg");
 
-  @include tablet() {
-    padding: 35px 31px 35px 33px;
-    border-left: 1px solid rgba($title-dark, 0.1);
-    border-right: 1px solid rgba($title-dark, 0.1);
+  @include mobile-only() {
+    margin-right: 26px;
   }
 }

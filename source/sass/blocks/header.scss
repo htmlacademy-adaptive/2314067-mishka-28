@@ -76,6 +76,20 @@
   }
 }
 
+.page-header__logo-img {
+  vertical-align: bottom;
+
+  @include tablet() {
+    width: 113px;
+    height: 46px;
+  }
+
+  @include desktop() {
+    width: 149px;
+    height: 72px;
+  }
+}
+
 .page-header__toggle {
   position: absolute;
   border: none;

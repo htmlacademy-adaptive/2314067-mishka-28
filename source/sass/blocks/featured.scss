@@ -9,16 +9,17 @@
 
   @include tablet() {
     display: grid;
-    grid-template-columns: 500px auto;
-    grid-template-areas: "ftitle ftopweek" "ftext fimg" "flist fimg" "fprice fimg";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "ftitle ftitle ftitle ftopweek" "ftext ftext fimg fimg" "flist flist fimg fimg" "fprice fprice fimg fimg";
     padding-top: 39px;
     padding-bottom: 52px;
     background-image: url("../img/decoration/zigzag-medium.svg");
   }
 
   @include desktop() {
-    grid-template-columns: 175px 305px auto;
+    grid-template-columns: 100px 307px 525px;
     grid-template-areas: "ftopweek ftitle fimg" "ftopweek ftext fimg" "ftopweek flist fimg" "ftopweek fprice fimg";
+    column-gap: 43px;
     padding-top: 71px;
     padding-bottom: 73px;
     background-image: url("../img/decoration/zigzag-large.svg");
@@ -46,7 +47,6 @@
     line-height: 57px;
     z-index: 1;
     padding-top: 61px;
-    max-width: 545px;
   }
 }
 
@@ -61,6 +61,8 @@
 
   @include tablet() {
     width: 100px;
+    margin-top: 7px;
+    margin-right: 13px;
     margin-left: auto;
     font-size: 17px;
     line-height: 17px;
@@ -69,7 +71,7 @@
 
   @include desktop {
     padding-top: 69px;
-    padding-right: 43px;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -87,8 +89,7 @@
   }
 
   @include desktop() {
-    margin: 35px 0 0 0;
-    max-width: 300px;
+    margin: 0;
   }
 }
 
@@ -101,7 +102,7 @@
   }
 
   @include desktop() {
-    margin-top: 60px;
+    margin: 0;
   }
 }
 
@@ -142,6 +143,17 @@
 .featured__image-item {
   display: block;
   margin: 0 auto;
+
+  @include tablet() {
+    width: 334px;
+    height: 404px;
+  }
+
+  @include desktop() {
+    width: 525px;
+    height: 636px;
+    margin: 0;
+  }
 }
 
 .featured__price {
