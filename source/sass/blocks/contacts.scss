@@ -12,7 +12,7 @@
 
   @include desktop() {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 527px;
     column-gap: 23px;
     padding: 94px 50px 105px 113px;
     background-image: url("../img/decoration/zigzag-large.svg");

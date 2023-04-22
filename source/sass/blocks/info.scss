@@ -3,12 +3,12 @@
   padding-bottom: 120px;
 
   @include tablet() {
-    padding-top: 154px;
+    padding-top: 155px;
     padding-bottom: 372px;
   }
 
   @include desktop() {
-    padding-top: 157px;
+    padding-top: 158px;
     padding-bottom: 355px;
   }
 }
@@ -23,7 +23,6 @@
   @include tablet() {
     background-image: url("../img/info-images-t.jpg");
     background-position: center bottom 12px;
-    padding-top: 155px;
   }
 
   @include desktop() {

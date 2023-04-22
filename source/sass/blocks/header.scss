@@ -7,7 +7,7 @@
 
   @include tablet() {
     justify-content: start;
-    margin-bottom: -155px;
+    margin-bottom: -44px;
     z-index: 1;
   }
 
@@ -34,7 +34,7 @@
     width: 100%;
     border-bottom: 1px solid rgba($title-dark, 0.1);
     left: 0;
-    top: 100px;
+    top: 88px;
   }
 }
 
@@ -101,6 +101,7 @@
   background-image: url("../img/decoration/menu-open.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  transition: 0.1s;
 
   @include tablet() {
     display: none;

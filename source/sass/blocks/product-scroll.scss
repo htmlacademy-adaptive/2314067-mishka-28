@@ -30,7 +30,7 @@
   }
 
   @include desktop() {
-    width: 316px;
+    width: 315px;
     height: 462px;
   }
 }
@@ -51,6 +51,15 @@
     display: flex;
     flex-direction: column;
     max-width: 316px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -87,6 +96,15 @@
 
   @include tablet() {
     font-size: 20px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: rgba($title-dark, 0.6);
+  }
+
+  &:focus {
+    color: rgba($title-dark, 0.3);
   }
 }
 
