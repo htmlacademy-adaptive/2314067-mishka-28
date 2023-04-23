@@ -14,6 +14,7 @@
   font-weight: 700;
   line-height: 24px;
   color: $title-dark;
+  text-align: left;
 
   @include mobile-only() {
     display: none;
@@ -43,12 +44,9 @@
 
 .navigation__item {
   @include mobile-only() {
-    display: flex;
     position: relative;
-    padding: 29px 30px 26px 30px;
     background-color: $color-white;
     border-top: 1px solid $color-background-product;
-    text-align: center;
   }
 
   &:hover,
@@ -91,13 +89,16 @@
 
   @include tablet() {
     display: flex;
-    height: 100%;
     align-items: center;
   }
 }
 
 .navigation__list--basic {
   grid-area: basic;
+
+  @include tablet-only() {
+    margin-top: 20px;
+  }
 }
 
 .navigation__list--basic .navigation__item {
@@ -116,7 +117,6 @@
 .navigation__list--basic .navigation__link {
   @include tablet-only() {
     font-size: 15px;
-    margin-top: 20px;
     width: 167px;
   }
 
@@ -136,8 +136,9 @@
 
 .navigation__link {
   @include mobile-only() {
+    display: block;
     position: relative;
-    padding: 0 0 0 46px;
+    padding: 29px 30px 26px 76px;
   }
 
   @include tablet() {
@@ -150,7 +151,7 @@
 .navigation__link--basket {
   @include mobile-only() {
     position: relative;
-    padding: 0;
+    padding-left: 30px;
   }
 
   @include tablet() {
@@ -190,7 +191,7 @@
   padding-top: 20px;
 
   &:not(:first-of-type) {
-    margin-left: 45px;
+    margin-left: 66px;
   }
 }
 

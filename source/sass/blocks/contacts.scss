@@ -6,7 +6,7 @@
   background-position: top;
 
   @include tablet() {
-    padding: 73px 50px 57px 50px;
+    padding: 63px 50px 57px 50px;
     background-image: url("../img/decoration/zigzag-medium.svg");
   }
 
@@ -23,19 +23,16 @@
 }
 
 .contacts__title {
-  display: flex;
   font-size: 25px;
   font-weight: 700;
   color: $title-dark;
+  text-align: left;
   margin: 0;
 
   @include tablet() {
     font-size: 43px;
     line-height: 50px;
-    align-items: center;
-    width: 47px;
-    height: 81px;
-    padding: 0 625px 0 0;
+    padding-top: 31px;
     background-image: url("../img/decoration/flag.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -139,5 +136,6 @@
   @include desktop() {
     margin-top: 85px;
     margin-left: 64px;
+    align-self: center;
   }
 }

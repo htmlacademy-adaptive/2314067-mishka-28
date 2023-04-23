@@ -39,7 +39,6 @@
   @include tablet() {
     font-size: 43px;
     line-height: 50px;
-    max-width: 450px;
   }
 
   @include desktop() {
@@ -85,7 +84,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: 38px;
-    max-width: 292px;
+    margin-right: 42px;
   }
 
   @include desktop() {
@@ -99,6 +98,7 @@
 
   @include tablet() {
     margin-top: 48px;
+    margin-right: 42px;
   }
 
   @include desktop() {
@@ -112,10 +112,6 @@
   text-align: left;
   border-bottom: 1px solid $color-background-product;
   padding: 10px 0 10px 0;
-
-  @include tablet() {
-    max-width: 292px;
-  }
 }
 
 .featured__item-title {
@@ -168,11 +164,12 @@
     margin-top: 57px;
     display: block;
     text-align: center;
-    max-width: 292px;
+    margin-right: 42px;
   }
 
   @include desktop() {
     margin-top: auto;
+    margin-right: 0;
   }
 }
 

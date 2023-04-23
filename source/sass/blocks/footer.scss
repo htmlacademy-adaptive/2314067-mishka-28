@@ -23,9 +23,10 @@
   }
 }
 
-.social {
+.page-footer__social-list {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 
   @include tablet() {
     margin-top: 8px;
@@ -38,14 +39,6 @@
 
 .social__link--telegram {
   margin-left: 35px;
-}
-
-.page-footer__social-list {
-  margin: 0 auto;
-
-  @include tablet() {
-    margin: 0;
-  }
 }
 
 .page-footer__copyright {
