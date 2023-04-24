@@ -8,6 +8,19 @@
   @include tablet() {
     padding: 63px 50px 57px 50px;
     background-image: url("../img/decoration/zigzag-medium.svg");
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      top: 63px;
+      right: 53px;
+      background-image: url("../img/decoration/flag.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
   }
 
   @include desktop() {
@@ -19,6 +32,20 @@
     background-repeat: no-repeat;
     background-size: 1050px;
     max-width: 1150px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 133px;
+      left: 113px;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/decoration/flag.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
@@ -32,17 +59,13 @@
   @include tablet() {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 31px;
-    background-image: url("../img/decoration/flag.svg");
-    background-repeat: no-repeat;
-    background-position: right;
+    padding: 31px 60px 40px 0;
   }
 
   @include desktop() {
     font-size: 53px;
     line-height: 57px;
-    padding: 46px 0 0 100px;
-    margin-left: -50px;
+    padding: 46px 0 0 111px;
     background-position: left;
   }
 }
@@ -63,12 +86,12 @@
   margin-top: 28px;
 
   @include tablet() {
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   @include desktop() {
     margin-top: 28px;
-    margin-left: 50px;
+    margin-left: 111px;
   }
 }
 

@@ -90,6 +90,10 @@
 }
 
 .group--type .group__title {
+  @include mobile-only() {
+    min-width: 63px;
+  }
+
   @include tablet() {
     top: 71px;
   }
@@ -103,6 +107,10 @@
 }
 
 .group--color .group__title {
+  @include mobile-only() {
+    min-width: 58px;
+  }
+
   @include tablet() {
     top: 66px;
   }
@@ -133,6 +141,10 @@
 }
 
 .group--name .group__title {
+  @include mobile-only() {
+    min-width: 66px;
+  }
+
   @include tablet() {
     top: 67px;
   }
@@ -154,6 +166,7 @@
   padding: 17px 60px 17px 0;
 
   @include tablet() {
+    padding-left: 17px;
     margin-left: 25px;
   }
 
@@ -234,6 +247,39 @@
 
 .group--email .group__input {
   padding: 16px 40px 18px 0;
+}
+
+.group__image {
+  position: absolute;
+  z-index: 1;
+
+  &--phone {
+    top: 11px;
+    right: 7px;
+
+    @include tablet() {
+      top: 61px;
+      right: 26px;
+    }
+
+    @include desktop() {
+      right: 180px;
+    }
+  }
+
+  &--mail {
+    top: 16px;
+    right: 3px;
+
+    @include tablet() {
+      top: 16px;
+      right: 22px;
+    }
+
+    @include desktop() {
+      right: 177px;
+    }
+  }
 }
 
 .group--additionally {
