@@ -42,7 +42,6 @@
   @include tablet() {
     position: relative;
     width: 100%;
-    padding: 0 50px;
   }
 }
 
@@ -101,7 +100,7 @@
   background-image: url("../img/decoration/menu-open.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  transition: 0.1s;
+  transition: 0.3s;
 
   @include tablet() {
     display: none;

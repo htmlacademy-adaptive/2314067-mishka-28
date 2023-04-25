@@ -38,6 +38,7 @@
 .product__item {
   border: 1px solid $color-background-product;
   box-sizing: border-box;
+  transition: 0.3s;
 
   @include mobile-only() {
     display: flex;
@@ -97,6 +98,7 @@
   line-height: 24px;
   color: $title-dark;
   text-decoration: none;
+  transition: 0.3s;
 
   @include tablet() {
     font-size: 20px;
@@ -149,10 +151,18 @@
   }
 }
 
-.product__basket {
-  background-image: url("../img/goods/basket.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 20px;
-  height: 19px;
+.product__icon {
+  color: $title-dark;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus-visible {
+    fill: $title-aqua-light;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $title-aqua-light;
+    opacity: 0.3;
+  }
 }

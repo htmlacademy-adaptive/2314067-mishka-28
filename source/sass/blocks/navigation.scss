@@ -22,11 +22,12 @@
 
   @include tablet() {
     display: grid;
-    grid-template-columns: 351px 348px;
+    grid-template-columns: 1fr 348px;
     grid-template-areas: ". user" "basic aftertext";
     box-sizing: border-box;
     max-width: 1150px;
     margin: 0 auto;
+    padding: 0 50px;
   }
 
   @include desktop() {
@@ -117,10 +118,15 @@
   }
 }
 
-.navigation__list--basic .navigation__link {
+.navigation__item--basic:nth-child(2n) .navigation__link {
+  @include tablet-only() {
+    margin-left: 36px;
+  }
+}
+
+.navigation__link--basic {
   @include tablet-only() {
     font-size: 15px;
-    width: 167px;
   }
 
   @include desktop() {
@@ -224,11 +230,20 @@
 .navigation__icon {
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover,
+  &:focus-visible {
+    fill: $title-aqua-light;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $title-aqua-light;
+    opacity: 0.3;
+  }
 }
 
 .navigation__icon--basket {
-  background-image: url("../img/decoration/basket.svg");
-
   @include mobile-only() {
     margin-right: 25px;
   }
@@ -239,8 +254,6 @@
 }
 
 .navigation__icon--search {
-  background-image: url("../img/decoration/search.svg");
-
   @include mobile-only() {
     margin-right: 26px;
   }
