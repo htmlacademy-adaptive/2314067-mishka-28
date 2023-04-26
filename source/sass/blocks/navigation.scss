@@ -122,6 +122,10 @@
   @include tablet-only() {
     margin-left: 36px;
   }
+
+  @include desktop() {
+    padding-right: 30px;
+  }
 }
 
 .navigation__link--basic {
