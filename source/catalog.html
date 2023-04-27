@@ -30,30 +30,34 @@
       <!-- Добавляет класс navigation--open -->
       <nav class="navigation navigation--no-js">
         <ul class="navigation__list navigation__list--basic site-list">
-          <li class="navigation__item">
-            <a class="navigation__link site-link" href="#">Каталог товаров</a>
+          <li class="navigation__item navigation__item--basic">
+            <a class="navigation__link navigation__link--basic site-link" href="#">Каталог товаров</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link site-link" href="form.html">Вязание на заказ</a>
+          <li class="navigation__item navigation__item--basic">
+            <a class="navigation__link navigation__link--basic site-link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="navigation__list navigation__list--user site-list">
           <li class="navigation__item">
             <a class="navigation__link navigation__link--search site-link" href="#">
-              <svg class="navigation__icon navigation__icon--search" width="18" height="18"></svg>
+              <svg class="navigation__icon navigation__icon--search" width="18" height="18">
+                <use href="img/sprite.svg#search" />
+              </svg>
               <span class="navigation__item-text">Поиск по сайту</span></a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link navigation__link--basket site-link" href="#">
-              <svg class="navigation__icon navigation__icon--basket" width="21" height="18"></svg>Корзина: пока пуста
+              <svg class="navigation__icon navigation__icon--basket" width="21" height="18">
+                <use href="img/sprite.svg#basket" />
+              </svg>Корзина: пока пуста
             </a>
           </li>
         </ul>
         <ul class="navigation__list navigation__list--extra site-list">
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--extra">
             <a class="navigation__link site-link" href="#">Новые поступления</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--extra">
             <a class="navigation__link site-link" href="#">Распродажа</a>
           </li>
         </ul>
@@ -143,24 +147,24 @@
     <!-- Блок с видео -->
     <section class="production container">
       <div class="production__wrapper">
-      <div class="production__video video">
-        <picture class="video__images">
-          <source media="(min-width: 1150px)"
-            srcset="img/goods/production-video-d.jpg 1x, img/goods/production-video-d@2x.jpg 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/goods/production-video-t.jpg 1x, img/goods/production-video-t@2x.jpg 2x">
-          <img class="video__images-item" src="img/goods/production-video-m.jpg"
-            srcset="img/goods/production-video-m@2x.jpg" width="259" height="150" alt="Превью видео">
-        </picture>
-        <button class="video__button" type="button">
-          <span class="visually-hidden">Воспроизвести видео</span>
-        </button>
+        <div class="production__video video">
+          <picture class="video__images">
+            <source media="(min-width: 1150px)"
+              srcset="img/goods/production-video-d.jpg 1x, img/goods/production-video-d@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/goods/production-video-t.jpg 1x, img/goods/production-video-t@2x.jpg 2x">
+            <img class="video__images-item" src="img/goods/production-video-m.jpg"
+              srcset="img/goods/production-video-m@2x.jpg" width="259" height="150" alt="Превью видео">
+          </picture>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Воспроизвести видео</span>
+          </button>
+        </div>
+        <h2 class="production__title">Процесс производства</h2>
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+          появляются наши товары.</p>
+        <a class="production__button button button--primary" href="#">Сделать заказ</a>
       </div>
-      <h2 class="production__title">Процесс производства</h2>
-      <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-        появляются наши товары.</p>
-      <a class="production__button button button--primary" href="#">Сделать заказ</a>
-    </div>
     </section>
   </main>
   <footer class="page-footer">

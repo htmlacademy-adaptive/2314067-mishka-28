@@ -3,8 +3,7 @@
   position: relative;
   box-sizing: border-box;
   border: none;
-  border-top: 1px solid $color-aqua-line;
-  padding: 30px 0;
+  padding: 0;
   margin: 0;
 
   @include tablet() {
@@ -20,7 +19,15 @@
   }
 }
 
+.group:not(:last-child) {
+  @include mobile-only() {
+    padding: 30px 0;
+  }
+}
+
 .group__title {
+  display: block;
+  position: relative;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
@@ -29,6 +36,7 @@
   text-align: left;
   box-sizing: border-box;
   padding: 0;
+  width: 100%;
 
   @include tablet() {
     position: absolute;
@@ -39,6 +47,93 @@
   @include desktop() {
     top: 67px;
     left: 46px;
+  }
+}
+
+.group__title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: $color-aqua-line;
+  z-index: -1;
+
+  @include tablet() {
+    display: none;
+  }
+}
+
+.group__title-type {
+  padding-right: 25px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+  }
+}
+
+.group__title-color {
+  padding-right: 18px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+    background-color: $color-white-darck;
+  }
+}
+
+.group__title-name {
+  padding-right: 18px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+  }
+}
+
+.group__title-phone {
+  position: relative;
+  padding-right: 28px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+    background-color: $color-white-darck;
+    top: 65px;
+  }
+
+  @include desktop() {
+    top: 0;
+  }
+}
+
+.group__title-mail {
+  position: relative;
+  padding-right: 21px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+    background-color: $color-white-darck;
+    top: 143px;
+  }
+
+  @include desktop() {
+    top: 88px;
+  }
+}
+
+.group__title-additionally {
+  position: relative;
+  padding-right: 22px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+    top: 69px;
   }
 }
 
@@ -90,10 +185,6 @@
 }
 
 .group--type .group__title {
-  @include mobile-only() {
-    min-width: 63px;
-  }
-
   @include tablet() {
     top: 71px;
   }
@@ -107,10 +198,6 @@
 }
 
 .group--color .group__title {
-  @include mobile-only() {
-    min-width: 58px;
-  }
-
   @include tablet() {
     top: 66px;
   }
@@ -141,10 +228,6 @@
 }
 
 .group--name .group__title {
-  @include mobile-only() {
-    min-width: 66px;
-  }
-
   @include tablet() {
     top: 67px;
   }
@@ -175,15 +258,13 @@
   }
 }
 
-.group--phone {
+.group__phone {
   position: relative;
-  color: rgb($title-dark, 0.3);
   padding-top: 12px;
   padding-bottom: 35px;
 
-
   @include tablet() {
-    padding-top: 50px;
+    padding-top: 0;
     padding-bottom: 24px;
   }
 
@@ -201,28 +282,24 @@
   }
 }
 
-.group--phone .group__title {
+.group__phone .group__input {
+  padding: 14px 40px 20px 0;
+
   @include tablet() {
-    top: 65px;
-  }
-
-  @include desktop() {
-    top: 66px;
+    padding-right: 60px;
+    padding-left: 17px;
   }
 }
 
-.group--phone .group__input {
-  padding: 14px 60px 20px 0;
-}
-
-.group--email {
+.group__email {
   position: relative;
   color: rgb($title-dark, 0.3);
-  padding-top: 0;
+  padding-top: 12px;
   padding-bottom: 35px;
 
   @include tablet() {
-    padding-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   @include desktop() {
@@ -239,67 +316,61 @@
   }
 }
 
-.group--email .group__title {
-  @include tablet() {
-    top: 24px;
-  }
-}
-
-.group--email .group__input {
+.group__email .group__input {
   padding: 16px 40px 18px 0;
+
+  @include tablet() {
+    padding: 15px 60px 19px 18px;
+  }
 }
 
 .group__image {
   position: absolute;
   z-index: 1;
+}
 
-  &--phone {
-    top: 11px;
-    right: 7px;
+.group__image--phone {
+  top: 23px;
+  right: 7px;
 
-    @include tablet() {
-      top: 61px;
-      right: 26px;
-    }
-
-    @include desktop() {
-      right: 180px;
-    }
+  @include tablet() {
+    top: 14px;
+    right: 26px;
   }
 
-  &--mail {
-    top: 16px;
-    right: 3px;
-
-    @include tablet() {
-      top: 16px;
-      right: 22px;
-    }
-
-    @include desktop() {
-      right: 177px;
-    }
+  @include desktop() {
+    right: 180px;
   }
 }
 
-.group--additionally {
-  margin-top: 8px;
-  padding-top: 20px;
-  padding-bottom: 0;
+.group__image--mail {
+  top: 28px;
+  right: 3px;
 
   @include tablet() {
-    margin-top: 0;
-    padding-top: 50px;
-    padding-bottom: 53px;
+    top: 16px;
+    right: 22px;
+  }
+
+  @include desktop() {
+    right: 177px;
+  }
+}
+
+.group__additionally {
+  position: relative;
+  padding-top: 23px;
+
+  @include tablet() {
+    border-top: none;
+    margin: 0 50px;
+    padding: 50px 0 53px 169px;
   }
 
   @include desktop() {
     padding-bottom: 49px;
+    padding-right: 173px;
   }
-}
-
-.group--additionally .group__title {
-  top: 69px;
 }
 
 .group__area {
