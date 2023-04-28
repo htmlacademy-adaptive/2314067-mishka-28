@@ -135,6 +135,10 @@
     padding-right: 0;
     top: 69px;
   }
+
+  @include desktop() {
+    top: 0;
+  }
 }
 
 .group__label {
@@ -359,15 +363,17 @@
 
 .group__additionally {
   position: relative;
-  padding-top: 23px;
 
   @include tablet() {
+    box-sizing: border-box;
     border-top: none;
     margin: 0 50px;
     padding: 50px 0 53px 169px;
   }
 
   @include desktop() {
+    max-width: 1050px;
+    margin: 0 auto;
     padding-bottom: 49px;
     padding-right: 173px;
   }
@@ -385,10 +391,12 @@
   padding: 17px;
   box-sizing: border-box;
   outline: none;
+  margin-top: 23px;
 
   @include tablet() {
     font-size: 19px;
     line-height: 18px;
+    margin-top: 0;
   }
 
   @include desktop() {

@@ -128,6 +128,13 @@
   }
 }
 
+.navigation__item--basic:nth-child(3n) .navigation__link {
+  @include desktop() {
+    padding-left: 0;
+    margin-right: 36px;
+  }
+}
+
 .navigation__link--basic {
   @include tablet-only() {
     font-size: 15px;
@@ -139,11 +146,8 @@
   }
 }
 
-.navigation-list .navigation__list--user {
-  align-self: start;
-}
-
 .navigation__list--user {
+  align-self: start;
   grid-area: user;
 
   @include desktop() {

@@ -16,18 +16,33 @@
 .info {
   position: relative;
   background-color: $color-background-img;
-  background-image: url("../img/info-images-m.jpg");
+  background-image: url("../img/info-m.jpg");
   background-repeat: no-repeat;
   background-position: center top -30px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/info-m@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @include tablet() {
-    background-image: url("../img/info-images-t.jpg");
+    background-image: url("../img/info-t.jpg");
     background-position: center bottom 12px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/info-t@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @include desktop() {
-    background-image: url("../img/info-images-d.jpg");
+    background-image: url("../img/info-d.jpg");
     background-position: center bottom 17px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/info-d@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 }
 
