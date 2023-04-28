@@ -4,7 +4,7 @@
   list-style-type: none;
 }
 
-.user-list {
+.site-link {
   text-decoration: none;
   color: inherit;
 }
@@ -14,6 +14,7 @@
   font-weight: 700;
   line-height: 24px;
   color: $title-dark;
+  text-align: left;
 
   @include mobile-only() {
     display: none;
@@ -21,26 +22,30 @@
 
   @include tablet() {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "user user" "basic aftertext";
-    position: absolute;
+    grid-template-columns: 1fr 348px;
+    grid-template-areas: ". user" "basic aftertext";
     box-sizing: border-box;
-    top: 0;
-    left: 0;
     max-width: 1150px;
-    padding: 32px 50px 32px 50px;
     margin: 0 auto;
+    padding: 0 50px;
   }
 
   @include desktop() {
-    grid-template-areas: "primary secondary" "extra aftertext";
+    grid-template-columns: 1fr 160px 1fr;
+    grid-template-areas: "basic . user" "extra . aftertext";
+  }
+
+  &--no-js {
+    @include mobile-only() {
+      display: block;
+      width: 100%;
+    }
   }
 }
 
 .navigation__item {
   @include mobile-only() {
     position: relative;
-    padding: 29px 30px 26px 46px;
     background-color: $color-white;
     border-top: 1px solid $color-background-product;
   }
@@ -85,39 +90,106 @@
 
   @include tablet() {
     display: flex;
-    height: 100%;
+    flex-wrap: wrap;
     align-items: center;
   }
 }
 
 .navigation__list--basic {
   grid-area: basic;
+
+  @include tablet-only() {
+    margin-top: 20px;
+  }
 }
 
-.navigation__list--basic .navigation__link {
+.navigation__list--basic .navigation__item {
+  @include desktop() {
+    &:nth-child(2n) {
+      border-left: 1px solid rgba($title-dark, 0.1);
+    }
+  }
+}
+
+.navigation__item--basic:first-of-type .navigation__link {
+  @include desktop() {
+    padding-left: 0;
+    margin-right: 36px;
+  }
+}
+
+.navigation__item--basic:nth-child(2n) .navigation__link {
+  @include tablet-only() {
+    margin-left: 36px;
+  }
+
+  @include desktop() {
+    padding-right: 30px;
+  }
+}
+
+.navigation__link--basic {
   @include tablet-only() {
     font-size: 15px;
-    padding-top: 20px;
-    width: 167px;
   }
 
   @include desktop() {
     font-size: 17px;
-    padding: 33px 35px 32px;
+    padding: 33px 0 32px 35px;
   }
 }
 
-.navigation__link {
-  @include tablet() {
-    display: flex;
-  }
+.navigation-list .navigation__list--user {
+  align-self: start;
 }
 
 .navigation__list--user {
   grid-area: user;
 
-  @include tablet() {
+  @include desktop() {
     margin-left: auto;
+  }
+}
+
+.navigation__link {
+  @include mobile-only() {
+    display: block;
+    position: relative;
+    padding: 29px 30px 26px 76px;
+  }
+
+  @include tablet() {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navigation__link--search,
+.navigation__link--basket {
+  @include mobile-only() {
+    position: relative;
+    padding-left: 30px;
+  }
+
+  @include tablet() {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+  }
+}
+
+.navigation__link--search {
+  @include tablet() {
+    border-left: 1px solid rgba($title-dark, 0.1);
+    border-right: 1px solid rgba($title-dark, 0.1);
+    padding: 36px 31px 34px 31px;
+  }
+}
+
+.navigation__link--basket {
+  @include tablet() {
+    padding: 32px 0 32px 30px;
   }
 }
 
@@ -133,10 +205,10 @@
 
 .navigation__list--extra .navigation__item {
   padding-top: 20px;
+}
 
-  &:not(:first-of-type) {
-    margin-left: 1px;
-  }
+.navigation__item--extra:not(:first-of-type) {
+  margin-left: 66px;
 }
 
 .navigation__item-text {
@@ -151,9 +223,42 @@
   font-weight: 400;
   line-height: 24px;
   color: $text-dark;
-  padding-top: 20px;
+  margin-top: 20px;
+  text-align: right;
 
   @include mobile-only() {
     display: none;
+  }
+}
+
+.navigation__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover,
+  &:focus-visible {
+    fill: $title-aqua-light;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $title-aqua-light;
+    opacity: 0.3;
+  }
+}
+
+.navigation__icon--basket {
+  @include mobile-only() {
+    margin-right: 25px;
+  }
+
+  @include tablet() {
+    margin-right: 32px;
+  }
+}
+
+.navigation__icon--search {
+  @include mobile-only() {
+    margin-right: 26px;
   }
 }

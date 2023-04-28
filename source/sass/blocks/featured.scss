@@ -9,16 +9,17 @@
 
   @include tablet() {
     display: grid;
-    grid-template-columns: 292px auto;
-    grid-template-areas: "ftitle ftopweek" "ftext fimg" "flist fimg" "fprice fimg";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "ftitle ftitle ftitle ftopweek" "ftext ftext fimg fimg" "flist flist fimg fimg" "fprice fprice fimg fimg";
     padding-top: 39px;
     padding-bottom: 52px;
     background-image: url("../img/decoration/zigzag-medium.svg");
   }
 
   @include desktop() {
-    grid-template-columns: 232px 292px auto;
+    grid-template-columns: 100px 307px 525px;
     grid-template-areas: "ftopweek ftitle fimg" "ftopweek ftext fimg" "ftopweek flist fimg" "ftopweek fprice fimg";
+    column-gap: 43px;
     padding-top: 71px;
     padding-bottom: 73px;
     background-image: url("../img/decoration/zigzag-large.svg");
@@ -38,7 +39,6 @@
   @include tablet() {
     font-size: 43px;
     line-height: 50px;
-    white-space: nowrap;
   }
 
   @include desktop() {
@@ -56,11 +56,12 @@
   line-height: 20px;
   color: $color-aqua-light;
   text-transform: uppercase;
-  margin: 4px 0 0 0;
-  padding: 0;
+  margin: 4px 0 0;
 
   @include tablet() {
     width: 100px;
+    margin-top: 7px;
+    margin-right: 13px;
     margin-left: auto;
     font-size: 17px;
     line-height: 17px;
@@ -69,7 +70,7 @@
 
   @include desktop {
     padding-top: 69px;
-    padding-right: 43px;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -83,11 +84,11 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: 38px;
+    margin-right: 42px;
   }
 
   @include desktop() {
-    margin: 35px 0 0 0;
-    max-width: 300px;
+    margin: 0;
   }
 }
 
@@ -97,10 +98,11 @@
 
   @include tablet() {
     margin-top: 48px;
+    margin-right: 42px;
   }
 
   @include desktop() {
-    margin-top: 60px;
+    margin: 0;
   }
 }
 
@@ -137,6 +139,17 @@
 .featured__image-item {
   display: block;
   margin: 0 auto;
+
+  @include tablet() {
+    width: 334px;
+    height: 404px;
+  }
+
+  @include desktop() {
+    width: 525px;
+    height: 636px;
+    margin: 0;
+  }
 }
 
 .featured__price {
@@ -151,11 +164,12 @@
     margin-top: 57px;
     display: block;
     text-align: center;
+    margin-right: 42px;
   }
 
   @include desktop() {
     margin-top: auto;
-    margin-left: -53px;
+    margin-right: 0;
   }
 }
 

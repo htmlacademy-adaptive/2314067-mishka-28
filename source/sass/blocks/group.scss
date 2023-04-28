@@ -3,23 +3,31 @@
   position: relative;
   box-sizing: border-box;
   border: none;
-  border-top: 1px solid $color-aqua-line;
-  padding: 30px 0;
+  padding: 0;
   margin: 0;
 
   @include tablet() {
     border-top: none;
-    padding: 63px 0 50px 169px;
+    padding: 50px 0 50px 169px;
     margin: 0 50px;
   }
 
   @include desktop() {
     padding-left: 174px;
-    max-width: 1150px;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.group:not(:last-child) {
+  @include mobile-only() {
+    padding: 30px 0;
   }
 }
 
 .group__title {
+  display: block;
+  position: relative;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
@@ -28,16 +36,104 @@
   text-align: left;
   box-sizing: border-box;
   padding: 0;
+  width: 100%;
 
   @include tablet() {
     position: absolute;
-    top: 66px;
+    top: 0;
     left: 0;
   }
 
   @include desktop() {
     top: 67px;
     left: 46px;
+  }
+}
+
+.group__title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: $color-aqua-line;
+  z-index: -1;
+
+  @include tablet() {
+    display: none;
+  }
+}
+
+.group__title-type {
+  padding-right: 25px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+  }
+}
+
+.group__title-color {
+  padding-right: 18px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+    background-color: $color-white-darck;
+  }
+}
+
+.group__title-name {
+  padding-right: 18px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+  }
+}
+
+.group__title-phone {
+  position: relative;
+  padding-right: 28px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+    background-color: $color-white-darck;
+    top: 65px;
+  }
+
+  @include desktop() {
+    top: 0;
+  }
+}
+
+.group__title-mail {
+  position: relative;
+  padding-right: 21px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+    background-color: $color-white-darck;
+    top: 143px;
+  }
+
+  @include desktop() {
+    top: 88px;
+  }
+}
+
+.group__title-additionally {
+  position: relative;
+  padding-right: 22px;
+  background-color: $color-white;
+
+  @include tablet() {
+    padding-right: 0;
+    top: 69px;
   }
 }
 
@@ -82,17 +178,15 @@
 }
 
 .group--type {
-  padding-top: 29px;
-  padding-bottom: 30px;
-
-  @include tablet() {
-    padding-top: 33px;
+  @include mobile-only() {
+    padding-top: 29px;
+    padding-bottom: 30px;
   }
 }
 
 .group--type .group__title {
   @include tablet() {
-    top: 50px;
+    top: 71px;
   }
 }
 
@@ -114,16 +208,32 @@
 }
 
 .group--name {
-  padding-top: 33px;
-  padding-bottom: 29px;
-
-  @include tablet() {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  @include mobile-only() {
+    padding-top: 33px;
+    padding-bottom: 29px;
   }
 
   @include desktop() {
     padding-right: 173px;
+  }
+
+  &:hover,
+  &:focus-within {
+    border-color: $color-aqua-line;
+  }
+
+  &:focus {
+    color: $text-dark;
+  }
+}
+
+.group--name .group__title {
+  @include tablet() {
+    top: 67px;
+  }
+
+  @include desktop() {
+    top: 68px;
   }
 }
 
@@ -135,12 +245,163 @@
   }
 }
 
-.group--name .input {
+.group--name .group__input {
+  padding: 17px 60px 17px 0;
+
   @include tablet() {
+    padding-left: 17px;
     margin-left: 25px;
   }
 
   @include desktop() {
     margin-left: 30px;
+  }
+}
+
+.group__phone {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 35px;
+
+  @include tablet() {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+
+  @include desktop() {
+    padding-right: 173px;
+  }
+
+  &:hover,
+  &:focus-within {
+    border-color: $color-aqua-line;
+  }
+
+  &:focus {
+    color: $text-dark;
+  }
+}
+
+.group__phone .group__input {
+  padding: 14px 40px 20px 0;
+
+  @include tablet() {
+    padding-right: 60px;
+    padding-left: 17px;
+  }
+}
+
+.group__email {
+  position: relative;
+  color: rgb($title-dark, 0.3);
+  padding-top: 12px;
+  padding-bottom: 35px;
+
+  @include tablet() {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @include desktop() {
+    padding-right: 173px;
+  }
+
+  &:hover,
+  &:focus-within {
+    border-color: $color-aqua-line;
+  }
+
+  &:focus {
+    color: $text-dark;
+  }
+}
+
+.group__email .group__input {
+  padding: 16px 40px 18px 0;
+
+  @include tablet() {
+    padding: 15px 60px 19px 18px;
+  }
+}
+
+.group__image {
+  position: absolute;
+  z-index: 1;
+}
+
+.group__image--phone {
+  top: 23px;
+  right: 7px;
+
+  @include tablet() {
+    top: 14px;
+    right: 26px;
+  }
+
+  @include desktop() {
+    right: 180px;
+  }
+}
+
+.group__image--mail {
+  top: 28px;
+  right: 3px;
+
+  @include tablet() {
+    top: 16px;
+    right: 22px;
+  }
+
+  @include desktop() {
+    right: 177px;
+  }
+}
+
+.group__additionally {
+  position: relative;
+  padding-top: 23px;
+
+  @include tablet() {
+    border-top: none;
+    margin: 0 50px;
+    padding: 50px 0 53px 169px;
+  }
+
+  @include desktop() {
+    padding-bottom: 49px;
+    padding-right: 173px;
+  }
+}
+
+.group__area {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb($title-dark, 0.3);
+  width: 100%;
+  min-height: 142px;
+  border: 2px solid $text-dark;
+  padding: 17px;
+  box-sizing: border-box;
+  outline: none;
+
+  @include tablet() {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  @include desktop() {
+    max-width: 700px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: $color-aqua-line;
+  }
+
+  &:focus {
+    color: $title-dark;
+    border-color: rgba($color-aqua, 0.6);
   }
 }

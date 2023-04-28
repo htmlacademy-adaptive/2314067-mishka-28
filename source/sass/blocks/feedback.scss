@@ -8,20 +8,20 @@
     padding-bottom: 47px;
     margin-top: 83px;
     margin-bottom: 68px;
-    background-image: url("../img/feedback-background-t.jpg");
+    background-image: url("../img/feedback-background.jpg");
     background-size: 46% auto;
     background-repeat: no-repeat;
     background-position: center left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback-background@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   @include desktop() {
-    padding: 90px auto 67px auto;
-    margin: 0;
-  }
-
-  @include desktop() {
-    margin: 90px auto 67px auto;
     padding: 78px 50px 96px 224px;
+    margin: 90px auto 67px auto;
     background-position: center left 50px;
   }
 }
@@ -113,7 +113,7 @@
     position: absolute;
     z-index: 1;
     bottom: 0;
-    right: 19px;
+    right: 0;
   }
 }
 
