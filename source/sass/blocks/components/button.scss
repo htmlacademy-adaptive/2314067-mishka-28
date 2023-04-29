@@ -32,8 +32,12 @@
   }
 
   &:hover,
-  &:focus,
+  &:focus {
+    color: $button-text-white;
+    background-color: $button-text-darck;
+  }
+
   &:active {
-    background-color: $button-aqua-style;
+    color: rgba($button-text-white, 0.3);
   }
 }

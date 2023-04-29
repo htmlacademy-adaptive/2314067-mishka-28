@@ -115,13 +115,22 @@
   font-size: 14px;
   margin: 0;
 
-  &--mail {
-    color: $text-dark;
-    text-decoration: underline $color-aqua-line;
-  }
-
   @include tablet() {
     font-size: 17px;
+  }
+}
+
+.contacts__item-text--mail {
+  color: $text-dark;
+  text-decoration: underline $color-aqua-line;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-aqua-footer;
+  }
+
+  &:active {
+    text-decoration: underline rgba($color-aqua-line, 0.1);
   }
 }
 

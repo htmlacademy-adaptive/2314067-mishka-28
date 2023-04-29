@@ -129,6 +129,16 @@
   @include tablet() {
     border: none;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $color-white;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .feedback__button--previous {
