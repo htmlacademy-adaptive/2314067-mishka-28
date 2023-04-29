@@ -104,11 +104,11 @@
   transition: 0.3s;
 
   &:hover,
-  &:focus-visible {
+  &:focus {
     fill: $color-aqua-footer;
   }
 
-  &:focus {
+  &:active {
     opacity: 0.3;
   }
 }
