@@ -161,7 +161,8 @@
           </button>
         </div>
         <h2 class="production__title">Процесс производства</h2>
-        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о&nbsp;том, как
+        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о&nbsp;том,
+          как
           появляются наши товары.</p>
         <a class="production__button button button--primary" href="#">Сделать заказ</a>
       </div>
@@ -210,6 +211,35 @@
       </div>
     </div>
   </footer>
+
+  <!-- Модальное окно. Класс показа modal-open -->
+  <div class="modal">
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <ul class="modal__list">
+        <li class="modal__item">
+          <label class="modal__label" for="radio-1">
+            <input class="modal_input visually-hidden" type="radio" name="size" value="S" id="radio-1" checked>
+            <span class="modal__mark">S</span>
+          </label>
+        </li>
+        <li class="modal__item">
+          <label class="modal__label" for="radio-2">
+            <input class="modal_input visually-hidden" type="radio" name="size" value="M" id="radio-2">
+            <span class="modal__mark">M</span>
+          </label>
+        </li>
+        <li class="modal__item">
+          <label class="modal__label" for="radio-3">
+            <input class="modal_input visually-hidden" type="radio" name="size" value="L" id="radio-3">
+            <span class="modal__mark">L</span>
+          </label>
+        </li>
+      </ul>
+      <button class="modal__button button button--secondary" type="submit">Добавить</button>
+    </form>
+  </div>
 
   <script src="./js/script.js"></script>
 </body>

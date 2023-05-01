@@ -19,7 +19,7 @@
   @include desktop() {
     grid-template-columns: 100px 307px 525px;
     grid-template-areas: "ftopweek ftitle fimg" "ftopweek ftext fimg" "ftopweek flist fimg" "ftopweek fprice fimg";
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 24% 22% 1fr 1fr;
     column-gap: 43px;
     padding-top: 59px;
     padding-bottom: 94px;
@@ -47,7 +47,7 @@
     font-size: 53px;
     line-height: 57px;
     z-index: 1;
-    margin-top: 61px;
+    padding-top: 61px;
     align-self: start;
   }
 }
@@ -123,6 +123,14 @@
   @include tablet() {
     padding: 10px 0 9px 0;
   }
+
+  @include desktop() {
+    padding: 8px 0 14px 0;
+
+    &:not(:first-child) {
+      padding: 7px 0 12px 0;
+    }
+  }
 }
 
 .featured__item-title {
@@ -179,8 +187,8 @@
   }
 
   @include desktop() {
-    margin-top: auto;
-    margin-right: 0;
+    margin-top: 64px;
+    margin-right: 11px;
     align-self: start;
   }
 }
