@@ -17,7 +17,7 @@
 
 .form__footer {
   margin: 0 auto;
-  margin-top: 17px;
+  margin-top: 7px;
   padding-bottom: 55px;
   box-sizing: border-box;
 
@@ -39,6 +39,7 @@
 .form__note {
   font-size: 14px;
   line-height: 16px;
+  text-align: left;
   margin: 0;
 
   @include tablet() {
@@ -52,7 +53,10 @@
 }
 
 .form__button {
+  font-size: 17px;
+  line-height: 16px;
   width: 100%;
+  padding: 16px 20px;
   margin-top: 30px;
 
   @include tablet() {

@@ -99,6 +99,7 @@
   color: $title-dark;
   text-decoration: none;
   transition: 0.3s;
+  text-align: left;
 
   @include tablet() {
     font-size: 20px;

@@ -44,11 +44,7 @@
   min-width: 142px;
 
   @include tablet() {
-    margin-top: 5px;
-  }
-
-  @include desktop() {
-    margin-top: 3px;
+    margin-top: 0;
   }
 }
 
@@ -83,16 +79,21 @@
 .copyright__link {
   display: flex;
   justify-content: center;
-  gap: 27px;
+  gap: 29px;
   text-decoration: none;
   align-items: center;
   border-top: 1px solid $color-border;
-  padding-top: 24px;
+  padding-top: 22px;
   transition: 0.3s;
 
   @include tablet() {
     border: none;
     padding-top: 0;
+    gap: 25px;
+  }
+
+  @include desktop() {
+    gap: 29px;
   }
 }
 
