@@ -3,7 +3,7 @@
 }
 
 .page-footer__wrapper {
-  padding-top: 25px;
+  padding-top: 30px;
   padding-bottom: 30px;
 
   @include tablet() {
@@ -44,7 +44,11 @@
   min-width: 142px;
 
   @include tablet() {
-    margin-top: 8px;
+    margin-top: 5px;
+  }
+
+  @include desktop() {
+    margin-top: 3px;
   }
 }
 
@@ -69,7 +73,7 @@
 }
 
 .page-footer__copyright {
-  margin-top: 27px;
+  margin-top: 32px;
 
   @include tablet() {
     margin-top: 0;
@@ -83,7 +87,7 @@
   text-decoration: none;
   align-items: center;
   border-top: 1px solid $color-border;
-  padding-top: 29px;
+  padding-top: 24px;
   transition: 0.3s;
 
   @include tablet() {

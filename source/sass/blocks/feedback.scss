@@ -4,9 +4,9 @@
   margin: 0;
 
   @include tablet() {
-    padding-top: 83px;
-    padding-bottom: 47px;
-    margin-top: 83px;
+    padding-top: 85px;
+    padding-bottom: 49px;
+    margin-top: 80px;
     margin-bottom: 68px;
     background-image: url("../img/feedback-background.jpg");
     background-size: 46% auto;
@@ -62,10 +62,6 @@
   margin: 0;
   padding: 0;
   text-align: left;
-
-  @include tablet() {
-    margin-top: 24px;
-  }
 }
 
 .feedback__text {
@@ -128,6 +124,9 @@
 
   @include tablet() {
     border: none;
+    background-position: right center;
+    min-width: 65px;
+    margin-right: 21px;
   }
 
   &:hover,
@@ -153,7 +152,7 @@
 .feedback__add-review {
   width: 100%;
   justify-content: center;
-  margin: 38px 0 0 0;
+  margin: 42px 0 0 0;
 
   @include tablet() {
     order: -1;
@@ -161,7 +160,7 @@
     max-width: 40%;
     min-width: 175px;
     font-size: 17px;
-    margin-top: 0;
+    margin-top: -7px;
     margin-left: auto;
   }
 }

@@ -1,6 +1,6 @@
 .featured {
   padding-top: 31px;
-  padding-bottom: 37px;
+  padding-bottom: 42px;
   margin: 0 auto;
   background-image: url("../img/decoration/zigzag-small.svg");
   background-repeat: repeat-x;
@@ -12,16 +12,18 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "ftitle ftitle ftitle ftopweek" "ftext ftext fimg fimg" "flist flist fimg fimg" "fprice fprice fimg fimg";
     padding-top: 39px;
-    padding-bottom: 52px;
+    padding-bottom: 69px;
     background-image: url("../img/decoration/zigzag-medium.svg");
   }
 
   @include desktop() {
     grid-template-columns: 100px 307px 525px;
     grid-template-areas: "ftopweek ftitle fimg" "ftopweek ftext fimg" "ftopweek flist fimg" "ftopweek fprice fimg";
+    grid-template-rows: repeat(4, 1fr);
     column-gap: 43px;
-    padding-top: 71px;
-    padding-bottom: 73px;
+    padding-top: 59px;
+    padding-bottom: 94px;
+    padding-left: 81px;
     background-image: url("../img/decoration/zigzag-large.svg");
     background-size: 1050px auto;
     background-repeat: no-repeat;
@@ -45,7 +47,8 @@
     font-size: 53px;
     line-height: 57px;
     z-index: 1;
-    padding-top: 61px;
+    margin-top: 61px;
+    align-self: start;
   }
 }
 
@@ -71,6 +74,7 @@
   @include desktop {
     padding-top: 69px;
     margin: 0 0 0 auto;
+    align-self: start;
   }
 }
 
@@ -78,7 +82,6 @@
   grid-area: ftext;
   line-height: 24px;
   margin: 17px 0 0 0;
-  align-self: start;
 
   @include tablet() {
     font-size: 17px;
@@ -89,20 +92,24 @@
 
   @include desktop() {
     margin: 0;
+    align-self: start;
   }
 }
 
 .featured__list {
   grid-area: flist;
-  margin-top: 28px;
+  margin-top: 18px;
+  margin-bottom: 28px;
 
   @include tablet() {
-    margin-top: 48px;
+    margin-top: 37px;
     margin-right: 42px;
+    margin-bottom: 0;
   }
 
   @include desktop() {
     margin: 0;
+    align-self: start;
   }
 }
 
@@ -112,6 +119,10 @@
   text-align: left;
   border-bottom: 1px solid $color-background-product;
   padding: 10px 0 10px 0;
+
+  @include tablet() {
+    padding: 10px 0 9px 0;
+  }
 }
 
 .featured__item-title {
@@ -170,6 +181,7 @@
   @include desktop() {
     margin-top: auto;
     margin-right: 0;
+    align-self: start;
   }
 }
 
@@ -178,6 +190,10 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0;
+
+  @include tablet() {
+    font-size: 20px;
+  }
 }
 
 .featured__button {
@@ -185,7 +201,7 @@
   margin-top: 25px;
 
   @include tablet() {
-    margin-top: 33px;
+    margin-top: 32px;
   }
 
   @include desktop() {
