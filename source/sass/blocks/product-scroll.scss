@@ -166,12 +166,12 @@
 
   &:hover,
   &:focus-visible {
-    fill: $title-aqua-light;
+    fill: $color-aqua-light;
     opacity: 1;
   }
 
   &:active {
-    fill: $title-aqua-light;
+    fill: $color-aqua-light;
     opacity: 0.3;
   }
 }

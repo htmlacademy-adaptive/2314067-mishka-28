@@ -33,11 +33,11 @@
 
   &:hover,
   &:focus {
-    color: $button-text-white;
-    background-color: $button-text-darck;
+    color: $color-white;
+    background-color: $text-dark;
   }
 
   &:active {
-    color: rgba($button-text-white, 0.3);
+    color: rgba($color-white, 0.3);
   }
 }
