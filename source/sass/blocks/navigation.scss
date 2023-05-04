@@ -115,7 +115,7 @@
 }
 
 .navigation__item--extra:not(:first-of-type) {
-  margin-left: 66px;
+  margin-left: 64px;
 }
 
 .navigation__item-text {
@@ -154,7 +154,7 @@
   @include mobile-only() {
     display: block;
     position: relative;
-    padding: 29px 30px 26px 76px;
+    padding: 28px 30px 26px 76px;
   }
 
   @include tablet() {
@@ -222,6 +222,10 @@
 .navigation__link--basket {
   @include tablet() {
     padding: 32px 0 32px 30px;
+  }
+
+  @include desktop() {
+    padding-left: 33px;
   }
 }
 

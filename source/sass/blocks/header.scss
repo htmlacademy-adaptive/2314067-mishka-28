@@ -48,7 +48,7 @@
 .page-header__logo {
   display: inline-block;
   z-index: 2;
-  padding: 22px 0 22px 0;
+  padding: 18px 0 14px 0;
 
   @include tablet-only() {
     position: absolute;
@@ -95,7 +95,7 @@
   width: 21px;
   height: 20px;
   right: 31px;
-  top: 32px;
+  top: 29px;
   background-color: inherit;
   background-image: url("../img/decoration/menu-open.svg");
   background-repeat: no-repeat;
