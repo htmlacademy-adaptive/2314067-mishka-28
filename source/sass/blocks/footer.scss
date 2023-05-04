@@ -57,15 +57,17 @@
 .social__icon {
   fill: $icon-dark;
   transition: 0.3s;
+}
 
-  &:hover,
-  &:focus-visible {
-    fill: $color-aqua-footer;
-  }
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: $color-aqua-footer;
+  transition: 0.3s;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.social__link:active .social__icon {
+  opacity: 0.3;
+  transition: 0.3s;
 }
 
 .page-footer__copyright {
@@ -84,7 +86,6 @@
   align-items: center;
   border-top: 1px solid $color-border;
   padding-top: 22px;
-  transition: 0.3s;
 
   @include tablet() {
     border: none;
@@ -97,23 +98,24 @@
   }
 }
 
+.copyright__icon {
+  fill: $color-aqua-light;
+}
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  fill: $color-aqua-footer;
+  transition: 0.3s;
+}
+
+.copyright__link:active .copyright__icon {
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
 .copyright__text {
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
   color: $title-dark;
-}
-
-.copyright__icon {
-  fill: $color-aqua-light;
-  transition: 0.3s;
-
-  &:hover,
-  &:focus {
-    fill: $color-aqua-footer;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
