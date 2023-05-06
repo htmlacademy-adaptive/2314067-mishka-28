@@ -20,10 +20,8 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo/logo-dheader.svg" width="149" height="72"
-            alt="Логотип Мишка">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-theader.svg" width="113" height="46"
-            alt="Логотип Мишка">
+          <source media="(min-width: 1150px)" srcset="img/logo/logo-dheader.svg" width="149" height="72">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-theader.svg" width="113" height="46">
           <img class="page-header__logo-img" src="img/logo/logo-mheader.svg" width="86" height="35" alt="Логотип Мишка">
         </picture>
       </a>
@@ -74,6 +72,7 @@
       <h2 class="page-main__item-title">Вязание на заказ</h2>
     </div>
     <section class="page-form">
+      <h2 class="visually-hidden">Форма для заполнения</h2>
       <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
         мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form-container__form form" action="https://echo.htmlacademy.ru" method="get">
@@ -159,12 +158,14 @@
                 required>
               <svg class="group__image group__image--phone" width="25" height="24">
                 <use href="img/sprite.svg#phone" />
+              </svg>
             </div>
             <label class="group__title" for="email"><span class="group__title-mail">E-MAIL</span></label>
             <div class="group__email">
               <input class="group__input input" type="text" name="e-mail" placeholder="Ваш Email*" id="email" required>
               <svg class="group__image group__image--mail" width="32" height="21">
                 <use href="img/sprite.svg#email" />
+              </svg>
             </div>
           </fieldset>
         </div>
