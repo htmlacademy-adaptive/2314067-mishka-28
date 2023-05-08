@@ -15,7 +15,7 @@
   @include desktop() {
     padding-top: 111px;
     grid-template-columns: 316px 316px 316px;
-    grid-column-gap: 52px;
+    grid-column-gap: 51px;
     grid-row-gap: 57px;
   }
 }
@@ -80,11 +80,11 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 27px 32px 26px 28px;
+  padding: 26px 27px 23px 28px;
   text-align: left;
 
   @include tablet-only() {
-    padding: 27px 32px 26px 34px;
+    padding: 27px 32px 22px 34px;
   }
 
   @include desktop() {
@@ -117,11 +117,12 @@
 
 .product__text {
   font-size: 13px;
-  margin: 5px 0 16px 0;
+  margin: 6px 0 17px 0;
 
   @include tablet() {
     font-size: 15px;
     margin-top: 7px;
+    margin-bottom: 0;
   }
 
   @include desktop() {
@@ -135,12 +136,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
+  padding-top: 20px;
   margin-top: auto;
   border-top: 1px solid $color-background-product;
 
   @include tablet() {
-    padding-top: 23px;
+    padding-top: 22px;
   }
 
   @include desktop() {
