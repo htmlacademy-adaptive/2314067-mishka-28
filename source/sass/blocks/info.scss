@@ -119,12 +119,12 @@
     margin: 0;
     width: 50%;
     box-sizing: border-box;
-  }
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
-    transform: scale(1, 1.05);
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      transform: translateY(-5px);
+    }
   }
 }
 

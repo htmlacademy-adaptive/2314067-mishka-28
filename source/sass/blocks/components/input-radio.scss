@@ -54,4 +54,8 @@
   &:focus-visible .form-radio__mark {
     border-color: $color-aqua-line;
   }
+
+  &:active .form-radio__mark {
+    border-color: rgba($text-dark, 0.3);
+  }
 }

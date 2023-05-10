@@ -4,6 +4,7 @@
   background-image: url("../img/decoration/zigzag-small.svg");
   background-repeat: repeat-x;
   background-position: top;
+  box-sizing: border-box;
 
   @include tablet() {
     padding: 63px 50px 57px 50px;

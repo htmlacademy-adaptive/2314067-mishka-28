@@ -9,6 +9,9 @@
   <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png"> <!-- 180x180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" as="script" href="js/script.js">
   <title>Mishka</title>
 </head>
 
@@ -53,10 +56,10 @@
         </ul>
         <ul class="navigation__list navigation__list--extra site-list">
           <li class="navigation__item navigation__item--extra">
-            <a class="navigation__link site-link" href="#">Новые поступления</a>
+            <a class="navigation__link navigation__link--extra site-link" href="#">Новые поступления</a>
           </li>
           <li class="navigation__item navigation__item--extra">
-            <a class="navigation__link site-link" href="#">Распродажа</a>
+            <a class="navigation__link navigation__link--extra site-link" href="#">Распродажа</a>
           </li>
         </ul>
         <span class="navigation__text">Бесплатная доставка по России</span>
@@ -84,15 +87,15 @@
       <dl class="featured__list">
         <div class="featured__item">
           <dt class="featured__item-title">Цвет:</dt>
-          <dl class="featured__item-text">тиффани/серый</dl>
+          <dd class="featured__item-text">тиффани/серый</dd>
         </div>
         <div class="featured__item">
           <dt class="featured__item-title">Диаметр:</dt>
-          <dl class="featured__item-text">25 см</dl>
+          <dd class="featured__item-text">25 см</dd>
         </div>
         <div class="featured__item">
           <dt class="featured__item-title">Высота:</dt>
-          <dl class="featured__item-text">15 см</dl>
+          <dd class="featured__item-text">15 см</dd>
         </div>
       </dl>
       <picture class="featured__image">
@@ -208,7 +211,7 @@
         </picture>
         <iframe class="contacts__map-item"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465563637!2d30.315220216152074!3d59.96826866666999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1681319349427!5m2!1sru!2sru"
-          width="320" height="454" alt="Карта" allowfullscreen="" loading="lazy"
+          width="320" height="454" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <a class="contacts__button button button--primary" href="#">Напишите нам</a>

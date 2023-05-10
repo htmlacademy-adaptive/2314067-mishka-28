@@ -9,6 +9,9 @@
   <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png"> <!-- 180x180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" as="script" href="js/script.js">
   <title>Mishka: Каталог товаров</title>
 </head>
 
@@ -17,10 +20,8 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo/logo-dheader.svg" width="149" height="72"
-            alt="Логотип Мишка">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-theader.svg" width="113" height="46"
-            alt="Логотип Мишка">
+          <source media="(min-width: 1150px)" srcset="img/logo/logo-dheader.svg" width="149" height="72">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-theader.svg" width="113" height="46">
           <img src="img/logo/logo-mheader.svg" width="86" height="35" alt="Логотип Мишка">
         </picture>
       </a>
@@ -55,10 +56,10 @@
         </ul>
         <ul class="navigation__list navigation__list--extra site-list">
           <li class="navigation__item navigation__item--extra">
-            <a class="navigation__link site-link" href="#">Новые поступления</a>
+            <a class="navigation__link navigation__link--extra site-link" href="#">Новые поступления</a>
           </li>
           <li class="navigation__item navigation__item--extra">
-            <a class="navigation__link site-link" href="#">Распродажа</a>
+            <a class="navigation__link navigation__link--extra site-link" href="#">Распродажа</a>
           </li>
         </ul>
         <span class="navigation__text">Бесплатная доставка по России</span>
@@ -71,6 +72,7 @@
     </div>
     <!-- Список товаров -->
     <section class="product-scroll container">
+      <h2 class="visually-hidden">Список товаров</h2>
       <ul class="product-scroll__list product">
         <li class="product__item">
           <a class="product__logo-link" href="#">
@@ -89,10 +91,11 @@
             <p class="product__text">Рост 30 см, вес 200 г</p>
             <div class="product__footer">
               <p class="product__text-price">1 200 руб.</p>
-              <a class="product__basket" href="#"><span class="visually-hidden">Корзина</span></a>
-              <svg class="product__icon" width="21" height="18">
-                <use href="img/sprite.svg#basket" />
-              </svg>
+              <a class="product__basket" href="#"><span class="visually-hidden">Корзина</span>
+                <svg class="product__icon" width="21" height="18">
+                  <use href="img/sprite.svg#basket" />
+                </svg>
+              </a>
             </div>
           </div>
         </li>
@@ -112,10 +115,11 @@
             <p class="product__text">Диаметр 15 см, высота 10 см</p>
             <div class="product__footer">
               <p class="product__text-price">690 руб.</p>
-              <a class="product__basket" href="#"><span class="visually-hidden">Корзина</span></a>
-              <svg class="product__icon" width="21" height="18">
-                <use href="img/sprite.svg#basket" />
-              </svg>
+              <a class="product__basket" href="#"><span class="visually-hidden">Корзина</span>
+                <svg class="product__icon" width="21" height="18">
+                  <use href="img/sprite.svg#basket" />
+                </svg>
+              </a>
             </div>
           </div>
         </li>
@@ -135,10 +139,11 @@
             <p class="product__text">Диаметр 30 см, высота 30 см</p>
             <div class="product__footer">
               <p class="product__text-price">1 500 руб.</p>
-              <a class="product__basket" href="#"><span class="visually-hidden">Корзина</span></a>
-              <svg class="product__icon" width="21" height="18">
-                <use href="img/sprite.svg#basket" />
-              </svg>
+              <a class="product__basket" href="#"><span class="visually-hidden">Корзина</span>
+                <svg class="product__icon" width="21" height="18">
+                  <use href="img/sprite.svg#basket" />
+                </svg>
+              </a>
             </div>
           </div>
         </li>

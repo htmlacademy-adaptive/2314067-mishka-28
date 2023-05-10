@@ -31,7 +31,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
-  color: $title-aqua-light;
+  color: $color-aqua-light;
   text-transform: uppercase;
   text-align: left;
   box-sizing: border-box;
@@ -390,7 +390,7 @@
     box-sizing: border-box;
     border-top: none;
     margin: 0 50px;
-    padding: 50px 0 45px 169px;
+    padding: 50px 0 44px 169px;
   }
 
   @include desktop() {
