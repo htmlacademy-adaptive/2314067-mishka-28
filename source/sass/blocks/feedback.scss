@@ -113,8 +113,8 @@
   }
 }
 
-.feedback__button--previous,
-.feedback__button--next {
+.feedback__previous,
+.feedback__next {
   background-repeat: no-repeat;
   background-position: center center;
   min-width: 130px;
@@ -136,15 +136,16 @@
   }
 
   &:active {
+    background-color: $color-white;
     opacity: 0.3;
   }
 }
 
-.feedback__button--previous {
+.feedback__previous {
   background-image: url("../img/arrow-left.svg");
 }
 
-.feedback__button--next {
+.feedback__next {
   background-image: url("../img/arrow-right.svg");
   border-left: none;
 }

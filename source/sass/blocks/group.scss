@@ -166,6 +166,12 @@
   text-decoration: none;
 }
 
+.group__input::-webkit-outer-spin-button,
+.group__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .group--grid {
   @include tablet() {
     display: grid;

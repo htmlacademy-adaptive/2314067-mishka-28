@@ -14,6 +14,16 @@
   }
 }
 
+.form-radio__label:hover .form-radio__mark,
+.form-radio__label:focus .form-radio__mark {
+  border-color: $color-aqua-line;
+}
+
+.form-radio__label:active .form-radio__mark,
+.form-radio__label:disabled .form-radio__mark {
+  border-color: rgba($text-dark, 0.3);
+}
+
 .form-radio__mark {
   display: flex;
   justify-content: center;
@@ -47,15 +57,4 @@
   width: 18px;
   height: 18px;
   border-radius: 100%;
-}
-
-.form-radio {
-  &:hover .form-radio__mark,
-  &:focus-visible .form-radio__mark {
-    border-color: $color-aqua-line;
-  }
-
-  &:active .form-radio__mark {
-    border-color: rgba($text-dark, 0.3);
-  }
 }
