@@ -75,7 +75,7 @@
       <h2 class="visually-hidden">Форма для заполнения</h2>
       <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
         мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form-container__form form" action="https://echo.htmlacademy.ru" method="get">
+      <form class="page-form__form form" action="https://echo.htmlacademy.ru" method="get">
         <!-- Выбор типа -->
         <fieldset class="form__group group group--type">
           <legend class="group__title"><span class="group__title-type">Тип</span></legend>
@@ -154,8 +154,8 @@
             <legend class="visually-hidden">Обратная связь</legend>
             <label class="group__title" for="number"><span class="group__title-phone">ТЕЛ</span></label>
             <div class="group__phone">
-              <input class="group__input input" type="number" name="telephone" placeholder="+7 XXX XXX XX XX*" id="number"
-                required>
+              <input class="group__input input" type="number" name="telephone" placeholder="+7 XXX XXX XX XX*"
+                id="number" required>
               <svg class="group__image group__image--phone" width="25" height="24">
                 <use href="img/sprite.svg#phone" />
               </svg>
@@ -169,9 +169,10 @@
             </div>
           </fieldset>
         </div>
-        <div class="group__additionally">
-          <label class="group__title" for="additionally"><span class="group__title-additionally">ДОП</span></label>
-          <textarea class="group__area" id="additionally" name="information"
+        <div class="form__additionally">
+          <label class="form__additionally-title" for="additionally"><span
+              class="form__additionally-title-text">ДОП</span></label>
+          <textarea class="form__additionally-area" id="additionally" name="information"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
         <div class="form__footer">
