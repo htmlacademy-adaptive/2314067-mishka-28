@@ -19,9 +19,12 @@
   border-color: $color-aqua-line;
 }
 
-.form-radio__label:active .form-radio__mark,
-.form-radio__label:disabled .form-radio__mark {
+.form-radio__label:active .form-radio__mark {
   border-color: rgba($text-dark, 0.3);
+}
+
+.form-radio__label:disabled .form-radio__mark {
+  border-color: rgba($text-dark, 0.6);
 }
 
 .form-radio__mark {

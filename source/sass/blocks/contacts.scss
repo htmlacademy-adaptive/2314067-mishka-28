@@ -150,6 +150,7 @@
 }
 
 .contacts__map {
+  position: relative;
   height: 454px;
   margin: 62px -30px 0 -30px;
 
@@ -165,32 +166,20 @@
 }
 
 .contacts__map-item {
+  position: absolute;
   display: block;
   border: none;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 
 .contacts__map-image {
-  display: none;
-}
-
-.contacts--no-js .contacts__map-image {
+  position: absolute;
   display: block;
   border: none;
-  height: 454px;
-  margin: 62px -30px 0 -30px;
-
-  @include tablet() {
-    margin: 49px -50px 0 -50px;
-  }
-
-  @include desktop() {
-    width: 527px;
-    height: 457px;
-    grid-area: 1 / 2 / 4 / 3;
-    margin: 0;
-  }
+  height: 100%;
+  width: 100%;
 }
 
 .contacts__button {

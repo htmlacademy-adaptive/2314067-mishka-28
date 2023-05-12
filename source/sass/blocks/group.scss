@@ -40,12 +40,13 @@
 
   @include tablet() {
     position: absolute;
+    width: 80px;
     top: 0;
     left: 0;
   }
 
   @include desktop() {
-    top: 67px;
+    top: 0;
     left: 60px;
   }
 }
@@ -106,7 +107,7 @@
   }
 
   @include desktop() {
-    top: 0;
+    top: 67px;
   }
 }
 
@@ -122,8 +123,8 @@
   }
 
   @include desktop() {
-    top: 78px;
-    left: 0;
+    top: 145px;
+    left: 1px;
   }
 }
 

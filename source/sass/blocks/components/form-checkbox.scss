@@ -19,9 +19,12 @@
   border-color: $color-aqua-line;
 }
 
-.form-checkbox__label:active .form-checkbox__mark,
-.form-checkbox__label:disabled .form-checkbox__mark {
+.form-checkbox__label:active .form-checkbox__mark {
   border-color: rgba($text-dark, 0.3);
+}
+
+.form-checkbox__label:disabled .form-checkbox__mark {
+  border-color: rgba($text-dark, 0.6);
 }
 
 .form-checkbox__mark {
