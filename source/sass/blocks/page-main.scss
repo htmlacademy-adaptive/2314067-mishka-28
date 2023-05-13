@@ -28,7 +28,7 @@
   @include desktop {
     height: 34px;
     bottom: 0;
-    background-image: url("../img/decoration/wave-d.svg");
+    background-image: url("../img/decoration/page-wave-d.svg");
   }
 }
 
@@ -46,25 +46,5 @@
   @include desktop() {
     font-size: 53px;
     line-height: 57px;
-  }
-}
-
-.page-form__text {
-  font-size: 13px;
-  line-height: 24px;
-  text-align: left;
-  margin: 17px auto 0 auto;
-  padding: 0 30px;
-
-  @include tablet() {
-    font-size: 17px;
-    line-height: 30px;
-    margin-top: 54px;
-    padding: 0 50px;
-  }
-
-  @include desktop() {
-    margin-top: 99px;
-    max-width: 702px;
   }
 }
