@@ -23,10 +23,6 @@
   border-color: rgba($text-dark, 0.3);
 }
 
-.form-radio__label:disabled .form-radio__mark {
-  border-color: rgba($text-dark, 0.6);
-}
-
 .form-radio__mark {
   display: flex;
   justify-content: center;
@@ -60,4 +56,12 @@
   width: 18px;
   height: 18px;
   border-radius: 100%;
+}
+
+.form-radio__input:focus ~ .form-radio__mark {
+  border-color: $color-aqua-line;
+}
+
+.form-radio__input:disabled ~ .form-radio__mark {
+  border-color: rgba($text-dark, 0.6);
 }
